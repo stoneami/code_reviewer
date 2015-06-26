@@ -1,0 +1,8 @@
+r31966 | zhangc | 2015-04-30 14:42:08 +0800 (Thu, 2015-04-30) | 8 行
+[All]【天气】城市搜索到的中国城市都显示中文bug:627460
+
+>>>REASON: no annotation
+Index: OppoWeather_auto/src/com/oppo/weather/adapters/GoSearchCityListAdapter.java
+--- OppoWeather_auto/src/com/oppo/weather/adapters/GoSearchCityListAdapter.java	(版本 31966)
+-			if(AccuUtils.IS_ACCU_DATA && city.getLocale() == null) {
+

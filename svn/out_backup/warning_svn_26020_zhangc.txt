@@ -1,0 +1,11 @@
+r26020 | zhangc | 2014-12-02 14:41:06 +0800 (Tue, 2014-12-02) | 8 行
+[All] 【天气】无网络情况下，添加一个城市，然后锁屏再亮屏，天气的背景图会变成黑色及天气更新失败错误问题
+
+>>>REASON: no annotation
+Index: NearMe/OppoWeather_auto/src/com/oppo/weather/OppoMainActivity.java
+--- NearMe/OppoWeather_auto/src/com/oppo/weather/OppoMainActivity.java	(版本 26020)
+-				if (AccuUtils.isWIFIActive(getApplicationContext())) {
+-				} else {
+-					mWeatherMainView.showBackground(true, false, true);
+-				}
+

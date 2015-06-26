@@ -1,0 +1,125 @@
+Index: NearMe/OppoWeather_auto/src/com/oppo/weather/OppoMainActivity.java
+--- NearMe/OppoWeather_auto/src/com/oppo/weather/OppoMainActivity.java	(版本 26020)
++++ NearMe/OppoWeather_auto/src/com/oppo/weather/OppoMainActivity.java	(版本 26019)
+-				if (AccuUtils.isWIFIActive(getApplicationContext())) {
+-				} else {
+-					mWeatherMainView.showBackground(true, false, true);
+-				}
+Index: NearMe/OppoWeather_auto/src/com/oppo/weather/update/UpdateWeatherLogic.java
+--- NearMe/OppoWeather_auto/src/com/oppo/weather/update/UpdateWeatherLogic.java	(版本 26020)
++++ NearMe/OppoWeather_auto/src/com/oppo/weather/update/UpdateWeatherLogic.java	(版本 26019)
+- //#ifndef VENDOR_EDIT
+- //Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for 
+- /*
+-		protected Boolean doInBackground(Void... params) {
++		protected Void doInBackground(Void... params) {
++				}// for end
+-			}
+-		}    	
+-		@Override
+-		protected void onPostExecute(Boolean result) {
+-				updateWeatherComplete(true, FLAGE_UPDATE_SUCCESS);
++			return null;
+-	}
+-*/
+-    //#else /* VENDOR_EDIT */
+-	class UpdateDBTask extends AsyncTask<Boolean, Void, Boolean> {
+-		protected Boolean doInBackground(Boolean... params) {
+-			List<DayWeather> goDayWeather = null;
+-			synchronized (lock) {
+-				if (params[0].booleanValue() == false) {
+-					return false;
+-				} else {
+-					for (String key : weatherMap.keySet()) {
+-						goDayWeather = weatherMap.get(key);
+-						if (goDayWeather != null) {
+-							long flage = saveGoCityWeather(goDayWeather, key);
+-							Log.i(TAG, "flage:" + flage);
+-						}
+-					}// for end
+-					return true;
+-				}
+-			}
+-		}    	
+-		@Override
+-		protected void onPostExecute(Boolean result) {
+-			if (result.booleanValue()) {
++		protected void onPostExecute(Void result) {
+-			} else {
+-				updateWeatherComplete(true, FLAGE_UPDATE_FAILED);
+-	}
+-    //#endif /* VENDOR_EDIT */	
+-	//#ifndef VENDOR_EDIT
+-	//Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for 
+-	/*
+-	*/
+-	//#else /* VENDOR_EDIT */
+-	private void sendNotify(boolean flag) {
+-		if (mTotalCities == mReceivedResps) {
+-			new UpdateDBTask().execute(Boolean.valueOf(flag));
+-		} 
+-	}
+-	//#endif /* VENDOR_EDIT */	
+-				//#ifndef VENDOR_EDIT
+-				//Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for update error
+-				/*
+-				*/
+-				//#else /* VENDOR_EDIT */
+-				sendNotify(false);
+-				//#endif /* VENDOR_EDIT */
+-					//#ifndef VENDOR_EDIT
+-					//Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for 
+-					/*
+-					*/
+-					//#else /* VENDOR_EDIT */
+-					sendNotify(false);
+-					//#endif /* VENDOR_EDIT */
+-				//#ifndef VENDOR_EDIT
+-				//Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for 
+-				/*
+-				*/
+-				//#else /* VENDOR_EDIT */
+-				sendNotify(true);
+-				//#endif /* VENDOR_EDIT */
+-				//#ifndef VENDOR_EDIT
+-				//Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for 
+-				/*
+-				*/
+-				//#else /* VENDOR_EDIT */
+-				sendNotify(false);
+-				//#endif /* VENDOR_EDIT */
+-			//#ifndef VENDOR_EDIT
+-			//Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for update error
+-			/*
+-			*/
+-			//#else /* VENDOR_EDIT */
+-			sendNotify(false);
+-			//#endif /* VENDOR_EDIT */
+-						//#ifndef VENDOR_EDIT
+-						//Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for update error
+-						/*
+-						*/
+-						//#else /* VENDOR_EDIT */
+-						sendNotify(false);
+-						//#endif /* VENDOR_EDIT */
+-					//#ifndef VENDOR_EDIT
+-					//Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for update error
+-					/*
+-					*/
+-					//#else /* VENDOR_EDIT */
+-					sendNotify(true);
+-					//#endif /* VENDOR_EDIT */
+-					//#ifndef VENDOR_EDIT
+-					//Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for update error
+-					/*
+-					*/
+-					//#else /* VENDOR_EDIT */
+-					sendNotify(false);
+-					//#endif /* VENDOR_EDIT */
+-				//#ifndef VENDOR_EDIT
+-				//Chen.Zhang@EXP.GeneralApp, 2014/12/02, Modify for update error
+-				/*
+-				*/
+-				//#else /* VENDOR_EDIT */
+-				sendNotify(false);
+-				//#endif /* VENDOR_EDIT */

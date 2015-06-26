@@ -1,0 +1,71 @@
+Index: NearMe/OppoWeather_auto/src/com/oppo/weather/OppoMainActivity.java
+--- NearMe/OppoWeather_auto/src/com/oppo/weather/OppoMainActivity.java	(版本 25989)
++++ NearMe/OppoWeather_auto/src/com/oppo/weather/OppoMainActivity.java	(版本 25988)
+-	//#ifdef VENDOR_EDIT
+-	//Chen.Zhang@EXP.GeneralApp, 2014/12/01, Add for UI
+-	private boolean isMenuShown = false;
+-	//#endif /* VENDOR_EDIT */
+-		//#ifdef VENDOR_EDIT
+-		//Chen.Zhang@EXP.GeneralApp, 2014/12/01, Add for UI
+-		if(isMenuShown)
+-		{
+-			new Handler().postDelayed(new Runnable() {
+-				@Override
+-				public void run() {
+-					// TODO Auto-generated method stub
+-					mWeatherMainView.onPopupMenu(false, false);
+-				}
+-			},300);
+-		}
+-	 //#endif /* VENDOR_EDIT */
+-            //#ifdef VENDOR_EDIT
+-            //Chen.Zhang@EXP.GeneralApp, 2014/12/01, Add for UI
+-            else {
+-        		mWeatherMainView.showBackground(false, true, true);
+-			}            
+-           //#endif /* VENDOR_EDIT */
+-		//#ifdef VENDOR_EDIT
+-		//Chen.Zhang@EXP.GeneralApp, 2014/12/01, Add for UI 
+-		isMenuShown = mWeatherMainView.getPopupMenuIsShowing();
+-		//#endif /* VENDOR_EDIT */
+-				//#ifndef VENDOR_EDIT
+-				//Chen.Zhang@EXP.GeneralApp, 2014/12/01, Remove for UI
+-				/*
+-				*/
+-				//#endif /* VENDOR_EDIT */
+-				//#ifndef VENDOR_EDIT
+-				//Chen.Zhang@EXP.GeneralApp, 2014/12/01, Remove for UI
+-				/*
+-				*/
+-				//#endif /* VENDOR_EDIT */
+-				//#ifndef VENDOR_EDIT
+-				//Chen.Zhang@EXP.GeneralApp, 2014/12/01, Remove for UI
+-				/*
+-				//#endif /* VENDOR_EDIT */
+-				//#ifndef VENDOR_EDIT
+-				//Chen.Zhang@EXP.GeneralApp, 2014/12/01, Remove for UI
+-				/*
+-                new Handler().postDelayed(new Runnable(){
+-                    public  void run(){
+-                        mWeatherMainView.onDisMissPopupMenu();
+-                    }
+-                },300);
+- * 				//#endif /* VENDOR_EDIT */
++//                new Handler().postDelayed(new Runnable(){
++//                    public  void run(){
++//                        mWeatherMainView.onDisMissPopupMenu();
++//                    }
++//                },300);
+Index: NearMe/OppoWeather_auto/src/com/oppo/weather/utils/OppoDateUtils.java
+--- NearMe/OppoWeather_auto/src/com/oppo/weather/utils/OppoDateUtils.java	(版本 25989)
++++ NearMe/OppoWeather_auto/src/com/oppo/weather/utils/OppoDateUtils.java	(版本 25988)
+Index: NearMe/OppoWeather_auto/res/values/integers.xml
+--- NearMe/OppoWeather_auto/res/values/integers.xml	(版本 25989)
++++ NearMe/OppoWeather_auto/res/values/integers.xml	(版本 25988)
+-    <!-- #ifndef VENDOR_EDIT -->
+-<!-- Chen.Zhang@EXP.GeneralApp, 2014/12/01, Modify for UI -->
+-<!--
+--->
+-<!-- #else  //VENDOR_EDIT -->
+-     <integer name="first_main_time">5000</integer>
+-<!-- #endif //VENDOR_EDIT -->

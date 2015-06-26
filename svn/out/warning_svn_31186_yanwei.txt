@@ -1,0 +1,8 @@
+r31186 | yanwei | 2015-04-08 10:50:52 +0800 (Wed, 2015-04-08) | 8 行
+[All] 【云服务】解决界面文字显示不全的问题bugID：614527
+
+>>>REASON: no annotation
+Index: CloudService/res/values-hdpi/dimens.xml
+--- CloudService/res/values-hdpi/dimens.xml	(版本 31186)
+-	<dimen name="main_more_dialog_item_height">54dp</dimen>
+

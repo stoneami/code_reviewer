@@ -1,0 +1,357 @@
+Index: NearMe/ScreenSavers_Telcel/src/com/oppo/daydreamtelcel/DayDreamVideo.java
+--- NearMe/ScreenSavers_Telcel/src/com/oppo/daydreamtelcel/DayDreamVideo.java	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/src/com/oppo/daydreamtelcel/DayDreamVideo.java	(版本 26027)
+-    			int screen_width = getWindowManager().getDefaultDisplay().getWidth();
+-		        int screen_height = getWindowManager().getDefaultDisplay().getHeight();
+-			try {   
+-			    if((screen_width == 720) && (screen_height == 1280)) {
+-			        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.telcel720));
+-			    } else {
+-				videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.telcel1080));
+-			    }
++    			try {
++					videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.telcel));
+-			        int screen_width = getWindowManager().getDefaultDisplay().getWidth();
+-		                int screen_height = getWindowManager().getDefaultDisplay().getHeight();
+-				if((screen_width == 720) && (screen_height == 1280)) {
+-				    mp.setDataSource(getApplicationContext(), Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.telcel720));
+-				} else {
+-				    mp.setDataSource(getApplicationContext(), Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.telcel1080));
+-				}
++				mp.setDataSource(getApplicationContext(), Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.telcel));
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unsigned.apk
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unsigned.apk
+--- NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unsigned.apk	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unsigned.apk	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/AndroidManifest.xml.d
+--- NearMe/ScreenSavers_Telcel/bin/AndroidManifest.xml.d	(版本 0)
++++ NearMe/ScreenSavers_Telcel/bin/AndroidManifest.xml.d	(版本 26027)
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\AndroidManifest.xml : \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\AndroidManifest.xml \
+Index: NearMe/ScreenSavers_Telcel/bin/res/drawable-hdpi/ic_daydreamvideo.png
+Index: NearMe/ScreenSavers_Telcel/bin/res/drawable-hdpi/ic_daydreamvideo.png
+--- NearMe/ScreenSavers_Telcel/bin/res/drawable-hdpi/ic_daydreamvideo.png	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/res/drawable-hdpi/ic_daydreamvideo.png	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/res/drawable-mdpi/ic_daydreamvideo.png
+Index: NearMe/ScreenSavers_Telcel/bin/res/drawable-mdpi/ic_daydreamvideo.png
+--- NearMe/ScreenSavers_Telcel/bin/res/drawable-mdpi/ic_daydreamvideo.png	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/res/drawable-mdpi/ic_daydreamvideo.png	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/res/drawable-xhdpi/ic_daydreamvideo.png
+Index: NearMe/ScreenSavers_Telcel/bin/res/drawable-xhdpi/ic_daydreamvideo.png
+--- NearMe/ScreenSavers_Telcel/bin/res/drawable-xhdpi/ic_daydreamvideo.png	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/res/drawable-xhdpi/ic_daydreamvideo.png	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$raw.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$raw.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$raw.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$raw.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$id.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$id.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$id.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$id.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BuildConfig.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BuildConfig.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BuildConfig.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BuildConfig.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$string.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$string.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$string.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$string.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/OnScreenOffReceiver.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/OnScreenOffReceiver.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/OnScreenOffReceiver.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/OnScreenOffReceiver.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView$1.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView$1.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView$1.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView$1.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/Utils.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/Utils.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/Utils.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/Utils.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$attr.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$attr.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$attr.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$attr.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$1.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$1.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$1.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$1.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$2.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$2.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$2.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$2.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$layout.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$layout.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$layout.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$layout.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$3.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$3.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$3.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$3.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$drawable.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$drawable.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$drawable.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$drawable.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$1.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$1.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$1.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$1.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$2.class
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$2.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$2.class	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$2.class	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes.dex.d
+--- NearMe/ScreenSavers_Telcel/bin/classes.dex.d	(版本 0)
++++ NearMe/ScreenSavers_Telcel/bin/classes.dex.d	(版本 26027)
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes.dex : \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\DayDreamVideo$2.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\DayDreamVideo$3.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\R.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\R$raw.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\OnScreenOffReceiver.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\BuildConfig.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\R$layout.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\DayDreamVideoView$1.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\DayDreamVideo$1.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\BummerView.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\BummerView$2.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\BummerView$1.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\Utils.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\R$string.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\DayDreamVideo.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\R$drawable.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\R$attr.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\R$id.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes\com\oppo\daydreamtelcel\DayDreamVideoView.class \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\dexedLibs\android-support-v4-7d58173ec7307e28c3c9fae904066b26.jar \
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel.ap_.d
+--- NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel.ap_.d	(版本 0)
++++ NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel.ap_.d	(版本 26027)
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\DayDreamTelcel.ap_ \
++ : Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\drawable-xhdpi\ic_daydreamvideo.png \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\raw\telcel.mp4 \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\layout\bummer.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\layout\activity_main.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\values-es-rMX\strings.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\values-es-rUS\strings.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\drawable-mdpi\ic_daydreamvideo.png \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\values\strings.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\drawable-hdpi\ic_daydreamvideo.png \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\values-zh-rCN\strings.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\res\drawable-xhdpi\ic_daydreamvideo.png \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\res\drawable-mdpi\ic_daydreamvideo.png \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\res\drawable-hdpi\ic_daydreamvideo.png \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\AndroidManifest.xml \
+Index: NearMe/ScreenSavers_Telcel/bin/proguard.txt
+--- NearMe/ScreenSavers_Telcel/bin/proguard.txt	(版本 0)
++++ NearMe/ScreenSavers_Telcel/bin/proguard.txt	(版本 26027)
++# view AndroidManifest.xml #generated:16
++-keep class com.oppo.daydreamtelcel.DayDreamVideo { <init>(...); }
++# view AndroidManifest.xml #generated:26
++-keep class com.oppo.daydreamtelcel.OnScreenOffReceiver { <init>(...); }
++# view res/layout/bummer.xml #generated:21
++-keep class com.oppo.daydreamvideo.BummerView { <init>(...); }
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unsigned.apk.d
+--- NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unsigned.apk.d	(版本 0)
++++ NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unsigned.apk.d	(版本 26027)
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\DayDreamTelcel-release-unsigned.apk : \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\DayDreamTelcel.ap_ \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\classes.dex \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\libs\android-support-v4.jar \
+Index: NearMe/ScreenSavers_Telcel/bin/dexedLibs/android-support-v4-7d58173ec7307e28c3c9fae904066b26.jar
+Index: NearMe/ScreenSavers_Telcel/bin/dexedLibs/android-support-v4-7d58173ec7307e28c3c9fae904066b26.jar
+--- NearMe/ScreenSavers_Telcel/bin/dexedLibs/android-support-v4-7d58173ec7307e28c3c9fae904066b26.jar	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/dexedLibs/android-support-v4-7d58173ec7307e28c3c9fae904066b26.jar	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/AndroidManifest.xml
+--- NearMe/ScreenSavers_Telcel/bin/AndroidManifest.xml	(版本 0)
++++ NearMe/ScreenSavers_Telcel/bin/AndroidManifest.xml	(版本 26027)
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.oppo.daydreamtelcel"
++    android:versionCode="1"
++    android:versionName="1.0" >
++<uses-sdk android:minSdkVersion="17" android:targetSdkVersion="17"/>
++<uses-permission android:name="android.permission.WAKE_LOCK" />
++<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
++<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
++<!-- <uses-permission android:name="android.permission.DEVICE_POWER" /> -->
++    <application
++        android:allowBackup="true"
++        android:icon="@drawable/ic_daydreamvideo"
++        android:label="@string/app_name">
++        <service
++            android:name="com.oppo.daydreamtelcel.DayDreamVideo"
++            android:exported="true"
++            android:icon="@drawable/ic_daydreamvideo"
++            android:label="@string/app_name">
++            <intent-filter>
++                <action android:name="android.service.dreams.DreamService" />
++                <category android:name="android.intent.category.DEFAULT" />
++            </intent-filter>
++        </service>
++        <receiver android:name="com.oppo.daydreamtelcel.OnScreenOffReceiver">
++            <intent-filter>
++                <category android:name="android.intent.category.DEFAULT" />
++                <action android:name="android.intent.action.SCREEN_OFF"/>
++            </intent-filter>
++        </receiver>
++    </application>
++</manifest>
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release.apk
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release.apk
+--- NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release.apk	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release.apk	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/jarlist.cache
+--- NearMe/ScreenSavers_Telcel/bin/jarlist.cache	(版本 0)
++++ NearMe/ScreenSavers_Telcel/bin/jarlist.cache	(版本 26027)
++# cache for current jar dependecy. DO NOT EDIT.
++# format is <lastModified> <length> <SHA-1> <path>
++# Encoding is UTF-8
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unaligned.apk
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unaligned.apk
+--- NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unaligned.apk	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel-release-unaligned.apk	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/classes.dex
+Index: NearMe/ScreenSavers_Telcel/bin/classes.dex
+--- NearMe/ScreenSavers_Telcel/bin/classes.dex	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/classes.dex	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel.ap_
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel.ap_
+--- NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel.ap_	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel.ap_	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/bin/build.prop
+--- NearMe/ScreenSavers_Telcel/bin/build.prop	(版本 0)
++++ NearMe/ScreenSavers_Telcel/bin/build.prop	(版本 26027)
++#Last build type
++#Sat, 17 May 2014 16:12:27 +0800
++build.last.target=release
++build.last.is.instrumented=false
++build.last.is.packaging.debug=false
++build.last.is.signing.debug=false
+Index: NearMe/ScreenSavers_Telcel/gen/R.java.d
+--- NearMe/ScreenSavers_Telcel/gen/R.java.d	(版本 0)
++++ NearMe/ScreenSavers_Telcel/gen/R.java.d	(版本 26027)
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\gen\com\oppo\daydreamtelcel\R.java \
++ : Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\drawable-xhdpi\ic_daydreamvideo.png \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\raw\telcel.mp4 \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\layout\bummer.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\layout\activity_main.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\values-es-rMX\strings.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\values-es-rUS\strings.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\drawable-mdpi\ic_daydreamvideo.png \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\values\strings.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\drawable-hdpi\ic_daydreamvideo.png \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\res\values-zh-rCN\strings.xml \
++Z:\ColorOS\NearMe\ScreenSavers_Telcel\ScreenSavers_Telcel\bin\AndroidManifest.xml \
+Index: NearMe/ScreenSavers_Telcel/gen/com/oppo/daydreamtelcel/R.java
+--- NearMe/ScreenSavers_Telcel/gen/com/oppo/daydreamtelcel/R.java	(版本 0)
++++ NearMe/ScreenSavers_Telcel/gen/com/oppo/daydreamtelcel/R.java	(版本 26027)
++/* AUTO-GENERATED FILE.  DO NOT MODIFY.
++ *
++ * This class was automatically generated by the
++ * aapt tool from the resource data it found.  It
++ * should not be modified by hand.
++ */
++package com.oppo.daydreamtelcel;
++public final class R {
++    public static final class attr {
++    }
++    public static final class drawable {
++        public static final int ic_daydreamvideo=0x7f020000;
++    }
++    public static final class id {
++        public static final int VideoView=0x7f060000;
++        public static final int bummer=0x7f060001;
++    }
++    public static final class layout {
++        public static final int activity_main=0x7f030000;
++        public static final int bummer=0x7f030001;
++    }
++    public static final class raw {
++        public static final int telcel=0x7f040000;
++    }
++    public static final class string {
++        public static final int app_name=0x7f050000;
++        public static final int storage_unmounted=0x7f050001;
++        public static final int videoview_error_text_unknown=0x7f050003;
++        public static final int videoview_error_title=0x7f050002;
++    }
++}
+Index: NearMe/ScreenSavers_Telcel/gen/com/oppo/daydreamtelcel/BuildConfig.java
+--- NearMe/ScreenSavers_Telcel/gen/com/oppo/daydreamtelcel/BuildConfig.java	(版本 0)
++++ NearMe/ScreenSavers_Telcel/gen/com/oppo/daydreamtelcel/BuildConfig.java	(版本 26027)
++/** Automatically generated file. DO NOT MODIFY */
++package com.oppo.daydreamtelcel;
++public final class BuildConfig {
++    public final static boolean DEBUG = false;
++}
+Index: NearMe/ScreenSavers_Telcel/res/drawable-xxhdpi/ic_daydreamvideo.png
+Index: NearMe/ScreenSavers_Telcel/res/drawable-hdpi/ic_daydreamvideo.png
+Index: NearMe/ScreenSavers_Telcel/res/values-es-rMX/strings.xml
+--- NearMe/ScreenSavers_Telcel/res/values-es-rMX/strings.xml	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/res/values-es-rMX/strings.xml	(版本 26027)
+-    <string name="app_name">"Telcel"</string>
++    <string name="app_name">"Salvapantalla de video"</string>
+Index: NearMe/ScreenSavers_Telcel/res/values-es-rUS/strings.xml
+--- NearMe/ScreenSavers_Telcel/res/values-es-rUS/strings.xml	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/res/values-es-rUS/strings.xml	(版本 26027)
+-    <string name="app_name">"Telcel"</string>
++    <string name="app_name">"Salvapantalla de video"</string>
+Index: NearMe/ScreenSavers_Telcel/res/raw/telcel1080.mp4
+Index: NearMe/ScreenSavers_Telcel/res/raw/telcel720.mp4
+Index: NearMe/ScreenSavers_Telcel/res/raw/telcel.mp4
+Index: NearMe/ScreenSavers_Telcel/res/raw/telcel.mp4
+--- NearMe/ScreenSavers_Telcel/res/raw/telcel.mp4	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/res/raw/telcel.mp4	(版本 26027)
++application/octet-stream
+Index: NearMe/ScreenSavers_Telcel/res/drawable-xhdpi/ic_daydreamvideo.png
+Index: NearMe/ScreenSavers_Telcel/res/values/strings.xml
+--- NearMe/ScreenSavers_Telcel/res/values/strings.xml	(版本 26028)
++++ NearMe/ScreenSavers_Telcel/res/values/strings.xml	(版本 26027)
+-    <string name="app_name">"Telcel"</string>
++    <string name="app_name">"Video screen saver"</string>
+Index: NearMe/ScreenSavers_Telcel/res/drawable-mdpi/ic_daydreamvideo.png

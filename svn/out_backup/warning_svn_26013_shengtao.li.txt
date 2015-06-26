@@ -1,0 +1,38 @@
+r26013 | shengtao.li | 2014-12-02 11:20:42 +0800 (Tue, 2014-12-02) | 8 行
+[All][OppoRemoteController]bugId：552856 解决搜索界面品牌未按照英文首字母排序问题
+
+>>>REASON: part of modification without annotation
+Index: NearMe/UEI/OppoRemoteController/src/com/oppo/remotectrl/deviceSelector/UeiBrandLoader.java
+--- NearMe/UEI/OppoRemoteController/src/com/oppo/remotectrl/deviceSelector/UeiBrandLoader.java	(版本 26013)
+-//#ifdef VENDOR_EDIT
+-//Shengtao.Li@EXP.General.APP.OppoRemoteController 2014/12/02 modify for bug 552856
+-//				this._brandTranslations = RemoteApplication
+-//						.retrieveBrandTranslationXML();
+-//				if (this._brandTranslations != null
+-//						&& this._brandTranslations.size() > 0) {
+-//					if ((brands != null)) {
+-//						for (int index = 0; index < brands.length; index++) {
+-//							String translation = this._brandTranslations
+-//									.get(brands[index]);
+-//
+-//							if (translation == null) {
+-//								translation = brands[index];
+-//							}
+-//
+-//							BrandInfo bi = new BrandInfo();
+-//							bi.buildFromName(translation, translation,
+-//									brands[index], index, mBrandType);
+-//							mList.add(bi);
+-//							if (isTopBrand(brands[index], topBrands)) {
+-//								BrandInfo topBi = new BrandInfo();
+-//								topBi.buildFromName(translation, translation,
+-//										brands[index], index, mBrandType, true);
+-//								mList.add(topBi);
+-//							}
+-//						}
+-//						Log.i(TAG, "--- TOTAL Brands: " + this.mList.size());
+-//					}
+-//				} else {
+-//#endif /*VENDOR_EDIT*/
+-//				}
+

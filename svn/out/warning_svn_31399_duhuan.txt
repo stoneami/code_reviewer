@@ -1,0 +1,8 @@
+r31399 | duhuan | 2015-04-13 17:48:04 +0800 (Mon, 2015-04-13) | 8 行
+[ROM] 修改【PbapClient】bug616197 首先打开蓝牙 蓝牙导入电话本状态显示灰色
+
+>>>REASON: no annotation
+Index: PbapClient/src/com/oppo/bluetooth/pbapclient/DeviceListActivity.java
+--- PbapClient/src/com/oppo/bluetooth/pbapclient/DeviceListActivity.java	(版本 31399)
+-        bluetoothPreference.setEnabled(true);
+

@@ -1,0 +1,8 @@
+r31287 | chenjf | 2015-04-10 16:03:59 +0800 (Fri, 2015-04-10) | 8 行
+[All] [服务指南][bug 617128]为墨西哥版去掉安全中心
+
+>>>REASON: no annotation
+Index: OppoUserGuide_KK/AndroidManifest.xml
+--- OppoUserGuide_KK/AndroidManifest.xml	(版本 31287)
+-    android:versionName="V1.01.20150410_5" >
+

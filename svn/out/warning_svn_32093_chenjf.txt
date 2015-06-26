@@ -1,0 +1,8 @@
+r32093 | chenjf | 2015-05-06 18:12:24 +0800 (Wed, 2015-05-06) | 8 行
+[All] [服务指南][bug 606903]优化服务指南启动时间
+
+>>>REASON: no annotation
+Index: OppoUserGuide_KK/AndroidManifest.xml
+--- OppoUserGuide_KK/AndroidManifest.xml	(版本 32093)
+-    android:versionName="V1.01.20150506_6" >
+

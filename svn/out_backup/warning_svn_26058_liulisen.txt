@@ -1,0 +1,16 @@
+r26058 | liulisen | 2014-12-03 11:14:50 +0800 (Wed, 2014-12-03) | 8 行
+[All] [OppoAfterServiceEx]BugID:548600,当售后服务有两个以上号码时，无法拨打
+
+>>>REASON: no annotation
+Index: NearMe/OppoAfterServiceEx/res/xml/after_service_information.xml
+--- NearMe/OppoAfterServiceEx/res/xml/after_service_information.xml	(版本 26058)
+-	<TH Hotline="024153888" Email="service@oppothai.com" Website="http://www.oppothai.com" Address=""/>
+-	<ID Hotline="0216306230" Email="service.id@oppo.com" Website="http://www.oppomobile.co.id" Address=""/>
+-	<VN Hotline="1800577776" Email="service@oppomobile.vn" Website="http://www.oppomobile.vn" Address=""/>
+-	<MY Hotline="1800886776" Email="service@oppomobile.com.my" Website="http://www.oppomobile.com.my" Address=""/>
+-	<IN Hotline="18001032777" Email="service@oppomobile.in" Website="http://www.oppomobile.in" Address=""/>
+-	<SG Hotline="18007676776" Email="service@oppo.com.sg" Website="http://www.oppomobile.com.sg" Address=""/>
+-	<PH Hotline="029191020" Email="support@oppo.com.ph" Website="http://www.oppo.com.ph" Address=""/>
+-	<TW Hotline="0800286776" Email="service@oppomobile.tw" Website="http://www.oppomobile.tw" Address=""/>
+-	<BD Hotline="09610997791" Email="" Website="http://oppo.com.bd" Address=""/>
+

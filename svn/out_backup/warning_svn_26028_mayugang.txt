@@ -1,0 +1,194 @@
+r26028 | mayugang | 2014-12-02 15:29:13 +0800 (Tue, 2014-12-02) | 8 行
+[EXROM] 【MX】更改墨西哥互动屏保的需求
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/src/com/oppo/daydreamtelcel/DayDreamVideo.java
+--- NearMe/ScreenSavers_Telcel/src/com/oppo/daydreamtelcel/DayDreamVideo.java	(版本 26028)
+-    			int screen_width = getWindowManager().getDefaultDisplay().getWidth();
+-		        int screen_height = getWindowManager().getDefaultDisplay().getHeight();
+-			try {   
+-			    if((screen_width == 720) && (screen_height == 1280)) {
+-			        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.telcel720));
+-			    } else {
+-				videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.telcel1080));
+-			    }
+-			        int screen_width = getWindowManager().getDefaultDisplay().getWidth();
+-		                int screen_height = getWindowManager().getDefaultDisplay().getHeight();
+-				if((screen_width == 720) && (screen_height == 1280)) {
+-				    mp.setDataSource(getApplicationContext(), Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.telcel720));
+-				} else {
+-				    mp.setDataSource(getApplicationContext(), Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.telcel1080));
+-				}
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$raw.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$raw.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$raw.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$id.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$id.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$id.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BuildConfig.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BuildConfig.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BuildConfig.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$string.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$string.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$string.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/OnScreenOffReceiver.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/OnScreenOffReceiver.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/OnScreenOffReceiver.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView$1.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView$1.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView$1.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/Utils.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/Utils.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/Utils.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$attr.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$attr.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$attr.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$1.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$1.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$1.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$2.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$2.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$2.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$layout.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$layout.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$layout.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$3.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$3.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideo$3.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$drawable.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$drawable.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/R$drawable.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$1.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$1.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$1.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/DayDreamVideoView.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$2.class
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$2.class
+--- NearMe/ScreenSavers_Telcel/bin/classes/com/oppo/daydreamtelcel/BummerView$2.class	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/classes.dex
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/classes.dex
+--- NearMe/ScreenSavers_Telcel/bin/classes.dex	(版本 26028)
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel.ap_
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel.ap_
+--- NearMe/ScreenSavers_Telcel/bin/DayDreamTelcel.ap_	(版本 26028)
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: NearMe/ScreenSavers_Telcel/res/drawable-xxhdpi/ic_daydreamvideo.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: NearMe/ScreenSavers_Telcel/res/drawable-hdpi/ic_daydreamvideo.png
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/res/raw/telcel1080.mp4
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/res/raw/telcel720.mp4
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/ScreenSavers_Telcel/res/raw/telcel.mp4
+
+>>>REASON: no annotation
+Index: NearMe/ScreenSavers_Telcel/res/raw/telcel.mp4
+--- NearMe/ScreenSavers_Telcel/res/raw/telcel.mp4	(版本 26028)
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: NearMe/ScreenSavers_Telcel/res/drawable-xhdpi/ic_daydreamvideo.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: NearMe/ScreenSavers_Telcel/res/drawable-mdpi/ic_daydreamvideo.png
+

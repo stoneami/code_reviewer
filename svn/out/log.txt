@@ -1,0 +1,171 @@
+START_SVN=31093, END_SVN=32798, SVN_CHECK_COUNT=-1
+SVN Logs have been created (takes 1s)
+Analyzing SVN 32500 ...
+Analyzing SVN 32798 ...
+**Ignore: SVN32567--[All] 按照需求347623，修改主题商店中文词条
+SVN 32567 is ignored !
+**Ignore: SVN32284--[ROM]:自动化全量导词条到2015-05-12  
+SVN 32284 is ignored !
+**Ignore: SVN32283--[ROM]:自动化全量导词条到2015-05-12  
+SVN 32283 is ignored !
+**Ignore: SVN32127--[ROM]:自动化全量导词条到2015-05-07  
+SVN 32127 is ignored !
+**Ignore: SVN32734--[ROM]:自动化全量导词条到2015-05-25  
+SVN 32734 is ignored !
+**Ignore: SVN32564--[ROM]:自动化全量导词条到2015-05-20  
+SVN 32564 is ignored !
+**svn_diff_32500_32499.txt is created.
+**analyzing share_info_layout.xml: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 32500--share_info_layout.xml: DIFF_START=1, DIFF_END=6, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**svn_diff_32798_32797.txt is created.
+**analyzing OnScreenSaverReceiver.java: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 32798--OnScreenSaverReceiver.java: DIFF_START=1, DIFF_END=6, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+Analyzing SVN 31768 ...
+**Ignore: SVN32072--[updateProject] 主题商店模块增加升级词条
+SVN 32072 is ignored !
+**Ignore: SVN31857--[ROM]:自动化全量导词条到2015-04-27  
+SVN 31857 is ignored !
+Analyzing SVN 32093 ...
+**Ignore: SVN31960--[ROM]:自动化全量导词条到2015-04-30  
+SVN 31960 is ignored !
+Analyzing SVN 31966 ...
+**Ignore: SVN32051--[ROM]:自动化全量导词条到2015-05-05  
+SVN 32051 is ignored !
+**Ignore: SVN32085--[ROM]:自动化全量导词条到2015-05-06  
+SVN 32085 is ignored !
+**svn_diff_31768_31767.txt is created.
+**analyzing city_weather_info.xml: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 31768--city_weather_info.xml: DIFF_START=1, DIFF_END=5, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**svn_diff_31966_31965.txt is created.
+**analyzing GoSearchCityListAdapter.java: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 31966--GoSearchCityListAdapter.java: DIFF_START=1, DIFF_END=6, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**svn_diff_32093_32092.txt is created.
+**analyzing AndroidManifest.xml: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 32093--AndroidManifest.xml: DIFF_START=1, DIFF_END=5, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**analyzing MainOperationManualActivity.java: 
+***It is a modified source file 
+***SVN 32093--MainOperationManualActivity.java: DIFF_START=6, DIFF_END=12, vendor_edit=2, exp=1, ifdef_in_pair=1
+**analyzing ParticularOperationManual.java: 
+***It is a modified source file 
+***SVN 32093--ParticularOperationManual.java: DIFF_START=13, DIFF_END=23, vendor_edit=3, exp=1, ifdef_in_pair=1
+**analyzing SearchViewManage.java: 
+***It is a modified source file 
+***SVN 32093--SearchViewManage.java: DIFF_START=24, DIFF_END=40, vendor_edit=4, exp=2, ifdef_in_pair=1
+**analyzing OppoSearchView.java: 
+***It is a modified source file 
+***SVN 32093--OppoSearchView.java: DIFF_START=41, DIFF_END=49, vendor_edit=2, exp=1, ifdef_in_pair=1
+Analyzing SVN 31686 ...
+**Ignore: SVN31457--[ROM]:自动化全量导词条到2015-04-15  
+SVN 31457 is ignored !
+Analyzing SVN 31662 ...
+**Ignore: SVN31692--[ROM]:自动化全量导词条到2015-04-21  
+SVN 31692 is ignored !
+**Ignore: SVN31660--[ROM]:自动化全量导词条到2015-04-20  
+SVN 31660 is ignored !
+Analyzing SVN 31664 ...
+Analyzing SVN 31596 ...
+**Ignore: SVN31569--[ROM]:自动化全量导词条到2015-04-18  
+SVN 31569 is ignored !
+**svn_diff_31596_31595.txt is created.
+**analyzing city_weather_info.xml: 
+**svn_diff_31686_31685.txt is created.
+***It is a modified source file 
+**analyzing weather.db: 
+--->>>Unkonwn reason (Binary type ?)
+---Warning: SVN 31686--weather.db has no modified content, Why ?
+**svn_diff_31664_31663.txt is created.
+**analyzing weather.db: 
+--->>>Unkonwn reason (Binary type ?)
+---Warning: SVN 31664--weather.db has no modified content, Why ?
+**svn_diff_31662_31661.txt is created.
+--->>>REASON: no annotation
+---Warning: SVN 31596--city_weather_info.xml: DIFF_START=1, DIFF_END=9, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**analyzing GoSearchCityListAdapter.java: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 31662--GoSearchCityListAdapter.java: DIFF_START=1, DIFF_END=6, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**Ignore: SVN31307--[ROM]:自动化全量导词条到2015-04-10  
+SVN 31307 is ignored !
+**Ignore: SVN31359--[15077]【天气】导词条后编译不过,暂时修改先使其编译通过  李虎
+SVN 31359 is ignored !
+Analyzing SVN 31287 ...
+**Ignore: SVN31306--[ROM]:自动化全量导词条到2015-04-10  
+SVN 31306 is ignored !
+Analyzing SVN 31429 ...
+Analyzing SVN 31399 ...
+**Ignore: SVN31243--[ROM]:自动化全量导用户手册词条到2015-04-09  
+SVN 31243 is ignored !
+Analyzing SVN 31398 ...
+**svn_diff_31429_31428.txt is created.
+**svn_diff_31398_31397.txt is created.
+**analyzing weather.db: 
+--->>>Unkonwn reason (Binary type ?)
+---Warning: SVN 31429--weather.db has no modified content, Why ?
+**analyzing activity_welcome_page.xml: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 31398--activity_welcome_page.xml: DIFF_START=1, DIFF_END=4, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=1
+**svn_diff_31399_31398.txt is created.
+**analyzing DeviceListActivity.java: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 31399--DeviceListActivity.java: DIFF_START=1, DIFF_END=4, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**svn_diff_31287_31286.txt is created.
+**analyzing AndroidManifest.xml: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 31287--AndroidManifest.xml: DIFF_START=1, DIFF_END=5, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**analyzing ResUtil.java: 
+***It is a modified source file 
+***SVN 31287--ResUtil.java: DIFF_START=6, DIFF_END=25, vendor_edit=4, exp=4, ifdef_in_pair=1
+Analyzing SVN 31172 ...
+Analyzing SVN 31185 ...
+**Ignore: SVN31206--[ROM]:自动化全量导词条到2015-04-08  
+SVN 31206 is ignored !
+Analyzing SVN 31186 ...
+**svn_diff_31186_31185.txt is created.
+**analyzing dimens.xml: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 31186--dimens.xml: DIFF_START=1, DIFF_END=5, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**svn_diff_31172_31171.txt is created.
+**analyzing GoDataDBHelper.java: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 31172--GoDataDBHelper.java: DIFF_START=1, DIFF_END=16, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**svn_diff_31185_31184.txt is created.
+**analyzing back_arrow_nomal.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 31185--back_arrow_nomal.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing back_arrow_press.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 31185--back_arrow_press.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing styles.xml: 
+***It is a modified source file 
+--->>>REASON: no annotation
+---Warning: SVN 31185--styles.xml: DIFF_START=3, DIFF_END=9, vendor_edit=0, exp=0, count_single_exp=0, ifdef_in_pair=0
+**analyzing dialog_new_login.xml: 
+--->>>Unkonwn reason (Binary type ?)
+---Warning: SVN 31185--dialog_new_login.xml has no modified content, Why ?
+**analyzing activity_login_bt_register_normal.9.png: 
+***SVN 31185--activity_login_bt_register_normal.9.png has double lines, so we ignore the next Index
+***SVN 31185--activity_login_bt_register_normal.9.png is non-code modifictation(deleted), ignore it
+**analyzing activity_login_bt_login_pressed.9.png: 
+***SVN 31185--activity_login_bt_login_pressed.9.png has double lines, so we ignore the next Index
+***SVN 31185--activity_login_bt_login_pressed.9.png is non-code modifictation(deleted), ignore it
+**analyzing activity_login_bt_register_pressed.9.png: 
+***SVN 31185--activity_login_bt_register_pressed.9.png has double lines, so we ignore the next Index
+***SVN 31185--activity_login_bt_register_pressed.9.png is non-code modifictation(deleted), ignore it
+**analyzing activity_login_bt_login_normal.9.png: 
+***SVN 31185--activity_login_bt_login_normal.9.png has double lines, so we ignore the next Index
+***SVN 31185--activity_login_bt_login_normal.9.png is non-code modifictation(deleted), ignore it

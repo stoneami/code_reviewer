@@ -1,0 +1,383 @@
+r17419 | zhangwensheng | 2014-07-07 11:12:11 +0800 (Mon, 2014-07-07) | 7 行
+[Find7][oppo_framework] 修改命名错误的图片名称。
+[分析]: 无
+[方案]: 无
+[风险]: 低
+[提交类型]:rom
+[提交人]: 陈婷
+r17416 | zhanglong | 2014-07-07 09:52:15 +0800 (Mon, 2014-07-07) | 8 行
+[All] [PowerManager] 1. 数字没有用波斯语数字表示; 2.提示已使用多长时间提示语丢失
+分析：1.代码中获取的数字没有经过本地化处理； 2.时间和分钟数都为0时没有显示
+方案：无。
+风险：无
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D2119
+r17359 | liuyuanfei | 2014-07-04 19:46:54 +0800 (Fri, 2014-07-04) | 8 行
+[All] [MX] 修改BUG 473738
+分析：布局比例不对称。
+方案：保持一致。
+风险：对布局平衡无影响。
+提交类型：rom
+Test Plan: 无
+Reviewed By: weichao.zhang
+Differential Revision: http://192.168.15.88:8080/D2112
+r17350 | zhangwensheng | 2014-07-04 18:34:12 +0800 (Fri, 2014-07-04) | 7 行
+[13073][oppo_framework] 提交阿拉伯语，孟加拉语等检索条图片。
+[分析]: 无
+[方案]: 无
+[风险]: 可能引发资源找不到导致电话本挂掉的问题。
+[提交类型]: rom
+[提交人]: 陈婷
+r17332 | wuyisheng | 2014-07-04 16:44:08 +0800 (Fri, 2014-07-04) | 8 行
+[13096] 【phone】将PVT分支移到NewDev分支
+分析：RTL布局和注释的部分移过来。
+方案：移植。
+风险：无风险，此分支不用于编译版本，用于同步代码，编译通过即可。
+提交类型：rom
+Test Plan: 用于同步代码
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D2074
+r17328 | wuyisheng | 2014-07-04 16:17:06 +0800 (Fri, 2014-07-04) | 8 行
+[13096] 【phone】修改词条
+分析：find7上词条错误，移植到13096上。
+方案：手动修改。
+风险：无风险。
+提交类型：rom
+Test Plan: 新版本验证
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D2060
+r17322 | gengxiaoyan | 2014-07-04 15:56:03 +0800 (Fri, 2014-07-04) | 8 行
+[All] 修改【状态栏】Bug475019：【AU】It cannot display carrier Vodafone and Optus's icon
+分析：不同国家运营商名称不同。
+方案：扩展运营商名称范围。
+风险：简单修改，没有风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jifeng.tan
+Differential Revision: http://192.168.15.88:8080/D2054
+r17316 | gengxiaoyan | 2014-07-04 15:39:52 +0800 (Fri, 2014-07-04) | 8 行
+[All] 修改【状态栏】Bug435128：【设置】缅甸语时，运营商图标不显示
+分析：中国移动或者联通卡在不同国家显示名称不一致。
+方案：优化中国移动和中国联通卡运营商图标显示逻辑。
+风险：优化代码逻辑，需对中国移动和联通卡运营商图标在相关区域统一测试下。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jifeng.tan
+Differential Revision: http://192.168.15.88:8080/D2046
+r17305 | duhuan | 2014-07-04 14:56:00 +0800 (Fri, 2014-07-04) | 8 行
+[13073&13096]【All】修改【Mms】473171 添加两个联系人后，按ENTER键不能添加联系人
+分析：同步代码
+方案：无。
+风险：其他项目已验证ok 风险低。
+提交类型：rom
+Test Plan: 无
+Reviewed By: didan.huang
+Differential Revision: http://192.168.15.88:8080/D2028
+r17301 | shitongjing | 2014-07-04 13:58:21 +0800 (Fri, 2014-07-04) | 8 行
+[13073&13096] Phone,All:MX clearcode 更改显示位置
+分析：无。
+方案：无。
+风险：需要QT验证
+提交类型：rom
+Test Plan: 无
+Reviewed By: swdp
+Differential Revision: http://192.168.15.88:8080/D2013
+r17289 | yanwenchen | 2014-07-04 11:48:37 +0800 (Fri, 2014-07-04) | 8 行
+[All] [oppo-framework] Bug469600:云相册中新建与编辑中间少了一条分隔线
+分析：图片未考虑RTL布局情况。
+方案：使用LTR布局，同英文下一致。
+风险：资源修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jifeng.tan
+Differential Revision: http://192.168.15.88:8080/D1997
+r17287 | wuyisheng | 2014-07-04 11:27:57 +0800 (Fri, 2014-07-04) | 8 行
+[13073]【phone】bug468375波斯语下，通话界面拨号盘词条与图标重叠
+分析：词条过长。
+方案：改短，手动修改。
+风险：有可能词条还是长了。
+提交类型：rom
+Test Plan: 新版本查看
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D1991
+r17277 | zhanglong | 2014-07-04 10:42:34 +0800 (Fri, 2014-07-04) | 8 行
+[All] [Blacklist] 解决BUG 473193：【通话】骚扰拦截里面的信息短语压边
+分析：RTL布局属性设置
+方案：无。
+风险：修改文字布局属性，无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: junhao.tang
+Differential Revision: http://192.168.15.88:8080/D1976
+r17274 | zhaoyongjie | 2014-07-04 10:11:46 +0800 (Fri, 2014-07-04) | 8 行
+[13073] [MX] [STK] 遗漏同步的代码 接收服务器推送无法取消弹框
+分析：无。
+方案：无。
+风险：提交代码无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: huan.du
+Differential Revision: http://192.168.15.88:8080/D1970
+r17243 | chenting | 2014-07-03 20:26:43 +0800 (Thu, 2014-07-03) | 8 行
+[13073][Contacts] 完成阿拉伯语，孟加拉等新语言右侧检索条的需求。
+分析：无。
+方案：无。
+风险：可能会出现字符找不到从而导致电话本挂掉的风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: didan.huang
+Differential Revision: http://192.168.15.88:8080/D1960
+r17232 | wuyisheng | 2014-07-03 19:12:02 +0800 (Thu, 2014-07-03) | 8 行
+[13073] 去掉拨号盘中输入号码的格式
+分析：阿拉伯语言下，保存联系人，号码会反过来。
+方案：去掉分段格式。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: zhi.wang
+Differential Revision: http://192.168.15.88:8080/D1950
+r17218 | wuyisheng | 2014-07-03 17:42:22 +0800 (Thu, 2014-07-03) | 8 行
+[13073] bug454588"Unfortunately, Phone has stopped" prompt message coming while we dial 433 in phone dialpad.
+分析：数组越界。
+方案：增加判断条件。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: zhi.wang
+Differential Revision: http://192.168.15.88:8080/D1935
+r17208 | bailipeng | 2014-07-03 16:38:10 +0800 (Thu, 2014-07-03) | 10 行
+[13073][video]调整右到左布局，视频名称靠右边显示,bug id:471664
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+检视人：
+Test Plan: 无：
+Reviewers: swdp, yugang.ma, wei.yan, lei.liu, jun.cheng, junhao.tang, hu.li, shaolong.ma, xiaoyan.chen, zhichao.liu, long.zhang
+Reviewed By: wei.yan
+Differential Revision: http://192.168.15.88:8080/D1921
+r17204 | liuyuanfei | 2014-07-03 16:12:19 +0800 (Thu, 2014-07-03) | 8 行
+[All] 【日历】修正BUG 474265 、473835
+分析：伊朗区域时间3月22时间换算异常。
+方案：做备份日期替换方案。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: zhichao.liu
+Differential Revision: http://192.168.15.88:8080/D1906
+r17187 | tanjifeng | 2014-07-03 14:26:13 +0800 (Thu, 2014-07-03) | 8 行
+[ROM_JB3_NewDev][MX]修改【oppo-frameworks资源】限定OppoDatePicker可以设置的日期为1970-2036，因为底层系统只能设置这段内的日期
+分析：目前ROM的设置中设置日期的可选范围为1900年到2100年，但是实际上选为1970-2036年以外的年份时设置不成功，因为系统底层已经将日期限定为该日期段。
+方案：控件中将可选日期也限定为1970-2036。
+风险：资源修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: wenchen.yan
+Differential Revision: http://192.168.15.88:8080/D1875
+r17171 | zhaoyongjie | 2014-07-03 11:41:41 +0800 (Thu, 2014-07-03) | 8 行
+[13073] [Email] 回复带附件的邮件  附件无删除按钮
+分析：无。
+方案：无。
+风险：低。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jiamin.zhang
+Differential Revision: http://192.168.15.88:8080/D1860
+r17164 | gengxiaoyan | 2014-07-03 10:57:21 +0800 (Thu, 2014-07-03) | 8 行
+[All] 修改【状态栏】Bug473650：【AU】Vodafone AU carrier no display icon
+分析：无。
+方案：无。
+风险：代码优化，无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: shaolong.ma
+Differential Revision: http://192.168.15.88:8080/D1849
+r17161 | wuyisheng | 2014-07-03 10:46:32 +0800 (Thu, 2014-07-03) | 8 行
+[13073] 【MX】[Phone] USSD is sent with unknown number in call log.
+分析：私人号码，未知号码点击拨号回当做ussd处理。
+方案：不让点击。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D1844
+r17154 | zhangwensheng | 2014-07-03 10:04:02 +0800 (Thu, 2014-07-03) | 11 行
+Merged revision(s) 17149 from ColorOs_JB3/Adapt/Adapt1.4/Stable1.4/Stable1.4_SOURCE_JB3_ROM/oppo/apkfiles_code/LauncherCenter/Wallpaper/OppoLivepaper:
+[All] [Launcher]修改动态壁纸界面支持从右到左排布
+分析：无。
+方案：无。
+风险：无风险。
+提交类型：rom
+合并: 13077PVT 13073MP
+Test Plan: 无
+Reviewed By: weichao.zhang
+Differential Revision: http://192.168.15.88:8080/D1831
+r17104 | tangjunhao | 2014-07-02 16:54:06 +0800 (Wed, 2014-07-02) | 8 行
+[All][MX][OppoTag] add permission for oppotag to change gprs state
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: lipeng.bai
+Differential Revision: http://192.168.15.88:8080/D1800
+r17103 | zhangweichao | 2014-07-02 16:18:57 +0800 (Wed, 2014-07-02) | 8 行
+[13073]修改[Settings]BugID[472741]解决不插卡时，刷机后开机或重置手机，选择阿拉伯语，区域没有自动变为阿联酋的问题
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: hui.yang
+Differential Revision: http://192.168.15.88:8080/D1793
+r17101 | wuyisheng | 2014-07-02 16:07:33 +0800 (Wed, 2014-07-02) | 8 行
+[13073] bug472541【TW】台湾区域繁体下转接通话等待词条错误
+分析：词条错误。
+方案：手动修改。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D1789
+r17099 | wuyisheng | 2014-07-02 16:02:26 +0800 (Wed, 2014-07-02) | 8 行
+[13073] bug469616【IR】波斯语下，固定拨号添加联系人界面按钮有重叠
+分析：阿拉伯语言引起的布局问题。
+方案：使用rtl属性。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D1788
+r17096 | tangjunhao | 2014-07-02 15:26:11 +0800 (Wed, 2014-07-02) | 8 行
+[Find7][MX]fix bugs for Androidhttp client to be null exception
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D1780
+r17089 | zhanglong | 2014-07-02 14:33:30 +0800 (Wed, 2014-07-02) | 8 行
+[13073] [Blacklist] 同步13094代码svn17088：解决BUG467464：【PK】操作STK时手机提示“unfortunately，block has stopped”
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: junhao.tang
+Differential Revision: http://192.168.15.88:8080/D1756
+r17079 | duhuan | 2014-07-02 11:45:37 +0800 (Wed, 2014-07-02) | 8 行
+[13073] 修改【Mms】【tw】同步1.4上的台湾运营商需要 彩信大小600k  台湾UA格式
+分析：同步代码
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: didan.huang
+Differential Revision: http://192.168.15.88:8080/D1731
+r17073 | zhangweichao | 2014-07-02 11:17:32 +0800 (Wed, 2014-07-02) | 8 行
+[13073]修改[Settings]BugID[468106]解决开机向导RTL问题
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: hui.yang
+Differential Revision: http://192.168.15.88:8080/D1720
+r17035 | duhuan | 2014-07-01 20:18:12 +0800 (Tue, 2014-07-01) | 8 行
+[13073] 修改【Mms】472923 【MX】重新发送失败的彩信，定时彩信功能异常
+分析：重新发送为保留之前添加的定时器
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: didan.huang
+Differential Revision: http://192.168.15.88:8080/D1688
+r17033 | zhangwensheng | 2014-07-01 20:12:10 +0800 (Tue, 2014-07-01) | 6 行
+[13073MX] [STK] 接收卡的推送多次弹框无法取消
+修改人：赵永杰
+风险：低
+涉及模块：stk
+r17027 | zhaoyongjie | 2014-07-01 19:50:51 +0800 (Tue, 2014-07-01) | 8 行
+[13073] [Email] hotmail不能打开新接收图片附件  转发附件无删除按钮
+分析：Hotmail返回的命令多出一条。
+方案：规避。
+风险：低。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jiamin.zhang
+Differential Revision: http://192.168.15.88:8080/D1682
+r17001 | yanwenchen | 2014-07-01 15:23:23 +0800 (Tue, 2014-07-01) | 8 行
+[13073] 修改[oppo控件]OppoTimePicker上下午显示使用本土语言，俄语显示过长使用特殊布局维护
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jifeng.tan
+Differential Revision: http://192.168.15.88:8080/D1635
+r16980 | chengjun | 2014-07-01 12:05:24 +0800 (Tue, 2014-07-01) | 8 行
+[13073] [Clock] 解决阿拉伯语下 设置按区域选择时间格式 时钟崩溃问题
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D1613
+r16977 | tangjunhao | 2014-07-01 11:29:22 +0800 (Tue, 2014-07-01) | 8 行
+[Find7][MX]change the layout of receive file activity for some text has not enough space to display
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D1596
+r16955 | wuyisheng | 2014-06-30 21:31:23 +0800 (Mon, 2014-06-30) | 8 行
+[13073] 【墨西哥】葡萄牙语下多方通话词条显示不全
+分析：词条错误。
+方案：手动修改。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D1566
+r16950 | tangjunhao | 2014-06-30 18:29:54 +0800 (Mon, 2014-06-30) | 8 行
+[All][MX] change text size for different font size
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D1565
+r16946 | luoqiaoyi | 2014-06-30 17:32:05 +0800 (Mon, 2014-06-30) | 8 行
+[All] [Launcher][MX]Find7高配Gameloft游戏更换，修改排布
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: weichao.zhang
+Differential Revision: http://192.168.15.88:8080/D1556
+r16939 | luoqiaoyi | 2014-06-30 15:48:55 +0800 (Mon, 2014-06-30) | 8 行
+[All] [SmallWeatherWidget][all][mx]修改天气插件上午下午的显示方式
+分析：无。
+方案：无。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: weichao.zhang
+Differential Revision: http://192.168.15.88:8080/D1536
+r16928 | gengxiaoyan | 2014-06-30 14:52:15 +0800 (Mon, 2014-06-30) | 8 行
+[13073] 修改【团结解锁】Bug468200：【巴基斯坦——设置】人脸解锁界面关闭按钮左右闪动
+分析：无。
+方案：修改RTL显示。
+风险：无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: shaolong.ma
+Differential Revision: http://192.168.15.88:8080/D1515

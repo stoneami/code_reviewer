@@ -1,0 +1,113 @@
+Index: NearMe/OppoAfterServiceEx/src/com/oppoex/afterservice/RegexUtil.java
+--- NearMe/OppoAfterServiceEx/src/com/oppoex/afterservice/RegexUtil.java	(版本 26058)
++++ NearMe/OppoAfterServiceEx/src/com/oppoex/afterservice/RegexUtil.java	(版本 26057)
+-/************************************************************************************
+-** File: - RegexUtil.java
+-** VENDOR_EDIT
+-** Copyright (C), 2008-2012, OPPO Mobile Comm Corp., Ltd
+-** 
+-** Description: 
+-**      
+-** 
+-** Version: 1.0
+-** Date created: 2014/12/02
+-** Author: Lisen.Liu@EXP.MidWare.Settings
+-** 
+-** --------------------------- Revision History: --------------------------------
+-** 	<author>	<data>			<desc>
+-**  Lisen.Liu   2014/12/02
+-************************************************************************************/
+-package com.oppoex.afterservice;
+-//import java.util.ArrayList;
+-import java.util.regex.Matcher;
+-import java.util.regex.Pattern;
+-public class RegexUtil {
+-    //the text only contain digital & - & ( & ) & space, treat is as a tel number	
+-	private static Pattern NUMBER_PATTERN = Pattern.compile("^[\\d-() ]{4,}$");
+-	public static boolean isTelNumber(String text) {
+-		if (text == null) {
+-			return false;
+-		}
+-		return NUMBER_PATTERN.matcher(text).matches();
+-	}
+-	//the text start with star and has more than 4 digitals treat as tel number, or has more than 4 digitals treat as number
+-	private static Pattern PHONE_PATTERN = Pattern.compile("\\*\\d{4,}|\\d{4,}");
+-	public static String translateTelNumber2Hyperlink(String tel) {
+-		Matcher m = PHONE_PATTERN.matcher(tel);
+-		/*ArrayList<String> list = new ArrayList<String>();
+-		while (m.find()) {
+-			list.add(m.group());
+-		}
+-		for (String number : list) {
+-			String s = "<a href=\"tel:" + number + "\">" + number + "</a>";
+-			tel = tel.replace(number, s);
+-		}*/
+-		while (m.find()) {
+-			String number = m.group();
+-            String s = "<a href=\"tel:" + number + "\">" + number + "</a>";
+-			tel = tel.replace(number, s);
+-		}
+-		return tel;
+-	}	
+-	public static boolean hasMoreThanOneTelNumber(String tel) {		
+-		Matcher m = PHONE_PATTERN.matcher(tel);		
+-		int count = 0;
+-		while (m.find()) {
+-			count++;
+-            if (count >= 2) {
+-                return true;
+-            }
+-		}
+-        return false;
+-	}
+-}
+Index: NearMe/OppoAfterServiceEx/src/com/oppoex/afterservice/AfterServiceActivity.java
+--- NearMe/OppoAfterServiceEx/src/com/oppoex/afterservice/AfterServiceActivity.java	(版本 26058)
++++ NearMe/OppoAfterServiceEx/src/com/oppoex/afterservice/AfterServiceActivity.java	(版本 26057)
+-//#ifdef VENDOR_EDIT
+-//Lisen.Liu@EXP.MidWare.Settings, 2014/12/02, add for: bug548600, hotline has more than one tel number, can't dial
+-            if (!RegexUtil.isTelNumber(mHotlineInfo) && RegexUtil.hasMoreThanOneTelNumber(mHotlineInfo)) {
+-                mHotlineInfo = RegexUtil.translateTelNumber2Hyperlink(mHotlineInfo);
+-                mHotlinePref.setPreferenceSuperlinkText(hotlineTitle, mHotlineInfo);
+-            } else          
+-//#endif /* VENDOR_EDIT */            
+Index: NearMe/OppoAfterServiceEx/src/com/oppoex/afterservice/AfterServicePreference.java
+--- NearMe/OppoAfterServiceEx/src/com/oppoex/afterservice/AfterServicePreference.java	(版本 26058)
++++ NearMe/OppoAfterServiceEx/src/com/oppoex/afterservice/AfterServicePreference.java	(版本 26057)
+-//#ifdef VENDOR_EDIT
+-//Lisen.Liu@EXP.MidWare.Settings, 2014/12/02, add for: bug548600, hotline has more than one tel number, can't dial
+-        if (mSuperlinkSummary != null) {
+-            mSummaryView.setText(android.text.Html.fromHtml(mSuperlinkSummary));
+-		    mSummaryView.setMovementMethod(android.text.method.LinkMovementMethod.getInstance());
+-        } else
+-//#endif /* VENDOR_EDIT */        
+-//#ifdef VENDOR_EDIT
+-//Lisen.Liu@EXP.MidWare.Settings, 2014/12/02, add for: bug548600, hotline has more than one tel number, can't dial
+-    String mSuperlinkSummary = null;
+-	protected void setPreferenceSuperlinkText(String title, String superlinkSummary) {
+-		mTitle = title;
+-		mSuperlinkSummary = superlinkSummary;
+-		notifyChanged();
+-	}    
+-//#endif /* VENDOR_EDIT */
+Index: NearMe/OppoAfterServiceEx/res/xml/after_service_information.xml
+--- NearMe/OppoAfterServiceEx/res/xml/after_service_information.xml	(版本 26058)
++++ NearMe/OppoAfterServiceEx/res/xml/after_service_information.xml	(版本 26057)
+-	<TH Hotline="024153888" Email="service@oppothai.com" Website="http://www.oppothai.com" Address=""/>
+-	<ID Hotline="0216306230" Email="service.id@oppo.com" Website="http://www.oppomobile.co.id" Address=""/>
+-	<VN Hotline="1800577776" Email="service@oppomobile.vn" Website="http://www.oppomobile.vn" Address=""/>
++	<TH Hotline="02-415-3888" Email="service@oppothai.com" Website="http://www.oppothai.com" Address="230 ถ.บางขุนเทียนชายทะเล แขวงแสมดำ เขตบางขุนเทียน กรุงเทพฯ 10150"/>
++	<ID Hotline="+62-21-6306230" Email="service.id@oppo.com" Website="http://www.oppomobile.co.id" Address="Ruko ITC Roxy Mas Block D3 No.16 Jl.KH.Hasyim Ashari Jakarta Pusat 10150"/>
++	<VN Hotline="1800577776" Email="service@oppomobile.vn" Website="http://www.oppomobile.vn" Address="Tòa Nhà 242 Cống Quỳnh, P.Phạm Ngũ Lão, Q1, TP.HCM"/>
+-	<MY Hotline="1800886776" Email="service@oppomobile.com.my" Website="http://www.oppomobile.com.my" Address=""/>
+-	<IN Hotline="18001032777" Email="service@oppomobile.in" Website="http://www.oppomobile.in" Address=""/>
+-	<SG Hotline="18007676776" Email="service@oppo.com.sg" Website="http://www.oppomobile.com.sg" Address=""/>
+-	<PH Hotline="029191020" Email="support@oppo.com.ph" Website="http://www.oppo.com.ph" Address=""/>
+-	<TW Hotline="0800286776" Email="service@oppomobile.tw" Website="http://www.oppomobile.tw" Address=""/>
+-	<BD Hotline="09610997791" Email="" Website="http://oppo.com.bd" Address=""/>
++	<MY Hotline="+(60)321103448" Email="service@oppomobile.com.my" Website="http://www.oppomobile.com.my" Address="Lot 1.24 First Floor,Podium Block,Plaza Berjaya,12,Jalan Imbi,55100"/>
++	<IN Hotline="+911141618154" Email="service@oppomobile.in" Website="http://www.oppomobile.in" Address="K-22, Lajpat Nagar-II New Delhi, 110024"/>
++	<SG Hotline="1800-SOS-OPPO(1800-767-6776)" Email="Service@oppo.com.sg" Website="http://www.oppomobile.com.sg" Address="6 Eu Tong Sen Street #04-89D The Central Singapore 059817"/>
++	<PH Hotline="(02) 919-1020" Email="support@oppo.com.ph" Website="http://www.oppo.com.ph" Address="Unit 10D CyberOne Building Eastwood City Bagumbayan. Quezon City Philippines (Inside CyberMall, beside IBM Plaza)."/>
++	<TW Hotline="0800-286-776" Email="service@oppomobile.tw" Website="http://www.oppomobile.tw" Address=""/>
++	<BD Hotline="+8809610997788" Email="" Website="http://www.oppo.com.bd" Address="House #34, Road #1 block #A, Niketon Gulshan #01, Dhaka #1212, Bangladesh"/>

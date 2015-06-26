@@ -1,0 +1,6 @@
+r25982 | zhanglong | 2014-12-01 10:47:30 +0800 (Mon, 2014-12-01) | 8 行
+[All][内存清理] 解决BUG550528:【安全中心】进相机拍照后，内存悬浮窗消失。
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/MemoryClear/AndroidManifest.xml
+

@@ -1,0 +1,13 @@
+Index: Tag/NearMePVT2.0-R5/MemoryClear/src/com/oppo/oppomemoryclear/OppoMemoryClearActivity.java
+--- Tag/NearMePVT2.0-R5/MemoryClear/src/com/oppo/oppomemoryclear/OppoMemoryClearActivity.java	(版本 26088)
++++ Tag/NearMePVT2.0-R5/MemoryClear/src/com/oppo/oppomemoryclear/OppoMemoryClearActivity.java	(版本 26087)
+-	    //zhanglong@EXP.GeneralApp.MemoryClear, 2014-12-03 remove temporary for PVT
+-	    //TODO: this should be add again when the clear BUG solved
+-//	   mClearinterval=(ListPreference)findPreference("clear_interval");
+-//	   mClearinterval.setOnPreferenceChangeListener(this);
++	   mClearinterval=(ListPreference)findPreference("clear_interval");
++	   mClearinterval.setOnPreferenceChangeListener(this);
+Index: Tag/NearMePVT2.0-R5/MemoryClear/res/xml/clear_management.xml
+Index: Tag/NearMePVT2.0-R5/MemoryClear
+--- Tag/NearMePVT2.0-R5/MemoryClear	(版本 26088)
++++ Tag/NearMePVT2.0-R5/MemoryClear	(版本 26087)

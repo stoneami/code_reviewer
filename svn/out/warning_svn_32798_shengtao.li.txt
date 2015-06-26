@@ -1,0 +1,9 @@
+r32798 | shengtao.li | 2015-05-26 17:32:04 +0800 (Tue, 2015-05-26) | 8 行
+[15077]【互动屏保】选择视频时添加对15077的判断
+
+>>>REASON: no annotation
+Index: ScreenSavers_DayDreamVideo/src/com/oppo/daydreamvideo/OnScreenSaverReceiver.java
+--- ScreenSavers_DayDreamVideo/src/com/oppo/daydreamvideo/OnScreenSaverReceiver.java	(版本 32798)
+-	    if(product.equalsIgnoreCase("N5206") || product.equalsIgnoreCase("R8106")
+-			|| product.equalsIgnoreCase("R1011w")) {
+

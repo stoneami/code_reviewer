@@ -1,0 +1,19 @@
+Index: NearMe/MemoryClear/AndroidManifest.xml
+Index: NearMe/MemoryClear/src/com/oppo/oppomemoryclear/MemoryInfoService.java
+--- NearMe/MemoryClear/src/com/oppo/oppomemoryclear/MemoryInfoService.java	(版本 26029)
++++ NearMe/MemoryClear/src/com/oppo/oppomemoryclear/MemoryInfoService.java	(版本 26028)
+-			//zhanglong@EXP.GeneralApp.MemoryClear, 2014-12-02, add for small window flash when not Hone
+-			/* sometimes when a new task started, the top activity change to launcher for a short time,
+-			 * and the user can't see home screen. 
+-			 * */
+-			if(bHome && lastIsHome) {
+-				//Both true, 2 times isHome, Then think it is Home
+-			} else {// else think it is not Home
+-				lastIsHome = bHome;
+-				if(bHome) {
+-					Log.d(TAG, "I'm not sure it displays Home now");
+-				}
+-				bHome = false;
+-			}
+-   //zhanglong@EXP.GeneralApp.MemoryClear, 2014-12-02, add for small window flash when not Hone
+-     private boolean lastIsHome;

@@ -1,0 +1,8 @@
+Index: NearMe/MemoryClear/AndroidManifest.xml
+Index: NearMe/MemoryClear/src/com/oppo/oppomemoryclear/MemoryInfoService.java
+--- NearMe/MemoryClear/src/com/oppo/oppomemoryclear/MemoryInfoService.java	(版本 25982)
++++ NearMe/MemoryClear/src/com/oppo/oppomemoryclear/MemoryInfoService.java	(版本 25981)
+-       //Zhanglong@EXP.GeneralApp.MemoryClear, 2014-11-28, Modify for restart when killed       
+-         return START_STICKY;
++         flags = START_REDELIVER_INTENT;
++         return super.onStartCommand(intent, flags, startId);  

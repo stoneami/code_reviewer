@@ -1,0 +1,10 @@
+r25982 | zhanglong | 2014-12-01 10:47:30 +0800 (Mon, 2014-12-01) | 8 行
+[All][内存清理] 解决BUG550528:【安全中心】进相机拍照后，内存悬浮窗消失。
+分析：内存过低时进程被杀掉导致。
+方案：让Service被杀后能自动重新启动。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D11961
+

@@ -1,0 +1,7 @@
+r31398 | zhangweichao | 2015-04-13 16:14:07 +0800 (Mon, 2015-04-13) | 8 行
+[All]修改[开机向导] 解决2.1黑色主题项目中标题字体颜色和背景相近的问题
+
+>>>REASON: no annotation
+Index: OppoSetupWizard/res/layout/activity_welcome_page.xml
+--- OppoSetupWizard/res/layout/activity_welcome_page.xml	(版本 31398)
+

@@ -1,0 +1,19 @@
+r31172 | zhangc | 2015-04-07 16:45:31 +0800 (Tue, 2015-04-07) | 8 行
+[All] 【QT_互动】【天气】天气详情及分享界面温度范围显示不一致。bug:615101
+
+>>>REASON: no annotation
+Index: OppoWeather_auto/src/com/oppo/weather/ex/databases/GoDataDBHelper.java
+--- OppoWeather_auto/src/com/oppo/weather/ex/databases/GoDataDBHelper.java	(版本 31172)
+-		if(data.day_temp != null && data.night_temp != null && data.current_temp != null)
+-		{
+-			if (Integer.valueOf(data.day_temp) < Integer
+-					.valueOf(data.current_temp)) {
+-				values.put(WeatherInfo.CURRENT_TEMP, data.day_temp);
+-			} else if (Integer.valueOf(data.night_temp) > Integer
+-					.valueOf(data.current_temp)) {
+-				values.put(WeatherInfo.CURRENT_TEMP, data.night_temp);
+-			}else{
+-				values.put(WeatherInfo.CURRENT_TEMP, data.current_temp);
+-			}
+-		}
+

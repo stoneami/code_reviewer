@@ -1,0 +1,18 @@
+r31185 | yanwei | 2015-04-08 10:21:09 +0800 (Wed, 2015-04-08) | 8 行
+[All] 【云服务】解决云服务界面显示异常
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: NearMeSync_ROM/res/drawable-ldrtl-hdpi/back_arrow_nomal.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: NearMeSync_ROM/res/drawable-ldrtl-hdpi/back_arrow_press.png
+
+>>>REASON: no annotation
+Index: UserServer_ROM/res/values/styles.xml
+--- UserServer_ROM/res/values/styles.xml	(版本 31185)
+-        <item name="android:layout_marginStart">5dp</item>
+-        <item name="android:layout_marginEnd">5dp</item>
+
+>>>Unkonwn reason (Binary type ?)
+Index: UserServer_ROM/res/layout/dialog_new_login.xml
+

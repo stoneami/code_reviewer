@@ -1,0 +1,241 @@
+r25822 | zhangwensheng | 2014-11-27 13:01:06 +0800 (Thu, 2014-11-27) | 9 行
+[ROM] WifiDirectFileTransfer切到git上维护
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/.classpath
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/.classpath
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/.classpath	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/.project
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/.project
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/.project	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/AndroidManifest.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/AndroidManifest.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/AndroidManifest.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/wifi_signal.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/wifi_signal.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/wifi_signal.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/stat_sys_download.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/stat_sys_download.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/stat_sys_download.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/progress.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/progress.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/progress.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/wifi_signal_open.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/wifi_signal_open.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/wifi_signal_open.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/wifi_signal_lock.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/wifi_signal_lock.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/wifi_signal_lock.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/stat_sys_upload.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/stat_sys_upload.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable/stat_sys_upload.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/menu/wifi_direct_option_menu.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/menu/wifi_direct_option_menu.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/menu/wifi_direct_option_menu.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/menu/transferhistorycontextfinished.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/menu/transferhistorycontextfinished.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/menu/transferhistorycontextfinished.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/menu/transferhistory.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/menu/transferhistory.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/menu/transferhistory.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/notification_remote.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/notification_remote.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/notification_remote.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/oppo_preference_list_fragment_wifi_direct_settings.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/oppo_preference_list_fragment_wifi_direct_settings.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/oppo_preference_list_fragment_wifi_direct_settings.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/file_transfer.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/file_transfer.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/file_transfer.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/no_transfers.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/no_transfers.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/no_transfers.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/receive_history.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/receive_history.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/receive_history.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/bluetooth_transfer_item.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/bluetooth_transfer_item.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/bluetooth_transfer_item.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/preference_empty_list.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/preference_empty_list.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/preference_empty_list.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/bluetooth_transfers_page.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/bluetooth_transfers_page.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/bluetooth_transfers_page.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/opp_confirm_dialog.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/opp_confirm_dialog.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/opp_confirm_dialog.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/confirm_dialog.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/confirm_dialog.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/confirm_dialog.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/preference_widget_wifi_signal.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/preference_widget_wifi_signal.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/preference_widget_wifi_signal.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/preference_progress_category.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/preference_progress_category.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/layout/preference_progress_category.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/wifi_signal.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/wifi_signal.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/wifi_signal.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/stat_sys_download.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/stat_sys_download.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/stat_sys_download.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/progress.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/progress.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/progress.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/wifi_signal_open.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/wifi_signal_open.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/wifi_signal_open.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/wifi_signal_lock.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/wifi_signal_lock.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/wifi_signal_lock.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/stat_sys_upload.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/stat_sys_upload.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/drawable-xhdpi/stat_sys_upload.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/values/colors.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/values/colors.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/values/colors.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/values/configs.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/values/configs.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/values/configs.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/values/attrs.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/values/attrs.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/values/attrs.xml	(版本 25822)
+
+>>>Unkonwn reason (Binary type ?)
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/xml/wifi_p2p_settings.xml
+
+>>>REASON: no annotation
+Index: Tag/NearMePVT2.0/WifiDirectFileTransfer/res/xml/wifi_p2p_settings.xml
+--- Tag/NearMePVT2.0/WifiDirectFileTransfer/res/xml/wifi_p2p_settings.xml	(版本 25822)
+

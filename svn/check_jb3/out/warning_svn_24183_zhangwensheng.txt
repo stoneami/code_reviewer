@@ -1,0 +1,57 @@
+r24183 | zhangwensheng | 2014-10-11 11:51:03 +0800 (Sat, 2014-10-11) | 8 行
+[All][OppoGestureGuide][MX]bug 503782 墨西哥版本不支持短号
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xxhdpi/background_change_unhold.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xxhdpi/background_dialing_calling.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xxhdpi/background_turnmute.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xxhdpi/background_answer_talking.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xxhdpi/background_dialing_people.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xxhdpi/background_answer_ringing.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xhdpi/background_change_unhold.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xhdpi/background_dialing_calling.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xhdpi/background_turnmute.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xhdpi/background_answer_talking.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xhdpi/background_dialing_people.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-xhdpi/background_answer_ringing.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-hdpi/background_change_unhold.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-hdpi/background_dialing_calling.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-hdpi/background_turnmute.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-hdpi/background_answer_talking.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-hdpi/background_dialing_people.png
+
+>>>REASON: added (or modified) non-code file without '_exp' 
+Index: apkfiles_code/PersonalCenter/CmccTestNotUse/OppoGestureGuide/res/drawable-es-hdpi/background_answer_ringing.png
+

@@ -1,0 +1,29 @@
+Index: NearMe/MemoryClear/AndroidManifest.xml
+Index: NearMe/MemoryClear/src/com/oppo/oppomemoryclear/MemoryInfoService.java
+--- NearMe/MemoryClear/src/com/oppo/oppomemoryclear/MemoryInfoService.java	(版本 25852)
++++ NearMe/MemoryClear/src/com/oppo/oppomemoryclear/MemoryInfoService.java	(版本 25851)
+-import android.preference.PreferenceManager;
+-	//Zhanglong@EXP.GeneralApp.MemoryClear, 2014-11-27, Add for save states when to be killed
+-	@Override
+-	public void onCreate() {
+-		SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+-		num = sp.getInt("num", 0);
+-		Log.d(TAG, "onCreate, num=" + num);
+-	}
+-	//Zhanglong@EXP.GeneralApp.MemoryClear, 2014-11-27, Add for save states when to be killed 
+-	 @Override
+-     public void onLowMemory() {
+-		 Log.d(TAG, "onLowMemory " + num);
+-    	 SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+-    	 SharedPreferences.Editor ed = sp.edit();
+-    	 //when low memory, this process is probably to be killed, save the number
+-    	 ed.putInt("num", num);
+-    	 ed.commit();
+-     }
+-			boolean bHome = isHome(); //zhanglong@EXP.GeneralApp.MemoryClear, 2014-11-27, modify for not call isHome repetitively
+-			if (bHome &&!MyWindowManager.isWindowShowing()&&isShownOnLauncher==true) {  
++			if (isHome() &&!MyWindowManager.isWindowShowing()&&isShownOnLauncher==true) {  
+- 			else if ((!bHome && MyWindowManager.isWindowShowing()) ||(!isShownOnLauncher && MyWindowManager.isWindowShowing())){
++ 			else if ((!isHome() && MyWindowManager.isWindowShowing()) ||(!isShownOnLauncher && MyWindowManager.isWindowShowing())){
+-             else if ( bHome && MyWindowManager.isWindowShowing()) {  
++             else if ( isHome() && MyWindowManager.isWindowShowing()) {  

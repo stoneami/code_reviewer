@@ -1,0 +1,72 @@
+START_SVN=23462, END_SVN=24183, SVN_CHECK_COUNT=-1
+SVN Logs have been created (takes 1s)
+Analyzing SVN 23462 ...
+Analyzing SVN 24183 ...
+Analyzing SVN 24080 ...
+Analyzing SVN 24004 ...
+**svn_diff_24004_24003.txt is created.
+**analyzing add_photo_remind_exp.png: 
+***SVN 24004--add_photo_remind_exp.png is non-code modifictation(added or modified) and has correct '_exp'
+**svn_diff_23462_23461.txt is created.
+**svn_diff_24080_24079.txt is created.
+**analyzing PurebackgroundTopActivity.java: 
+**analyzing NetworkController.java: 
+***It is a modified source file 
+***It is a modified source file 
+***SVN 23462--PurebackgroundTopActivity.java: DIFF_START=1, DIFF_END=29, vendor_edit=6, exp=3, ifdef_in_pair=1
+**svn_diff_24183_24182.txt is created.
+**analyzing background_change_unhold.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_change_unhold.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_dialing_calling.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_dialing_calling.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_turnmute.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_turnmute.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_answer_talking.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_answer_talking.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_dialing_people.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_dialing_people.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_answer_ringing.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_answer_ringing.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_change_unhold.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_change_unhold.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_dialing_calling.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_dialing_calling.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_turnmute.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_turnmute.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_answer_talking.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_answer_talking.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_dialing_people.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_dialing_people.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_answer_ringing.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_answer_ringing.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_change_unhold.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_change_unhold.png is non-code modifictation(added or modified) and has no '_exp'
+***SVN 24080--NetworkController.java: DIFF_START=1, DIFF_END=58, vendor_edit=1, exp=3, ifdef_in_pair=1
+**analyzing background_dialing_calling.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_dialing_calling.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_turnmute.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_turnmute.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_answer_talking.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_answer_talking.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_dialing_people.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_dialing_people.png is non-code modifictation(added or modified) and has no '_exp'
+**analyzing background_answer_ringing.png: 
+--->>>REASON: added (or modified) non-code file without '_exp' 
++++Warning: SVN 24183--background_answer_ringing.png is non-code modifictation(added or modified) and has no '_exp'

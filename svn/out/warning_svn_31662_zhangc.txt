@@ -1,0 +1,9 @@
+r31662 | zhangc | 2015-04-20 19:43:42 +0800 (Mon, 2015-04-20) | 8 行
+[All] 【DZ------天气】法语下添加阿尔及利亚的城市，城市无标符 bug:606877
+
+>>>REASON: no annotation
+Index: OppoWeather_auto/src/com/oppo/weather/adapters/GoSearchCityListAdapter.java
+--- OppoWeather_auto/src/com/oppo/weather/adapters/GoSearchCityListAdapter.java	(版本 31662)
+-import java.util.Locale;
+-			if(AccuUtils.IS_ACCU_DATA && !Locale.getDefault().getLanguage().equalsIgnoreCase("en")) {
+

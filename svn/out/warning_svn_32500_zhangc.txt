@@ -1,0 +1,8 @@
+r32500 | zhangc | 2015-05-18 16:11:43 +0800 (Mon, 2015-05-18) | 8 行
+[All] 【天气】分享界面图片不显示城市名bug:631412
+
+>>>REASON: no annotation
+Index: OppoWeather_auto/res/layout/share_info_layout.xml
+--- OppoWeather_auto/res/layout/share_info_layout.xml	(版本 32500)
+-</RelativeLayout>
+

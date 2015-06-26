@@ -1,0 +1,15 @@
+Index: NearMe/UEI/OppoRemoteController/src/com/oppo/remotectrl/controller/management/ControllerSettingsActivity.java
+--- NearMe/UEI/OppoRemoteController/src/com/oppo/remotectrl/controller/management/ControllerSettingsActivity.java	(版本 25858)
++++ NearMe/UEI/OppoRemoteController/src/com/oppo/remotectrl/controller/management/ControllerSettingsActivity.java	(版本 25857)
+-		//#ifdef VENDOR_EDIT
+-    	//Shengtao.Li@EXP.GeneralAPP.OppoRemoteController, 2014/11/17 add for Regional Options
+-    	mRegion_value = sharedPreferences.getInt(Contants.REGION_PREFERENCE, 1);
+-		region_array =getResources().getStringArray(R.array.regions);
+-		mRegionPreference.setSummary(region_array[mRegion_value-1]);
+-		//#endif /*VENDOR_EDIT*/
++		//#ifdef VENDOR_EDIT
++    	//Shengtao.Li@EXP.GeneralAPP.OppoRemoteController, 2014/11/17 add for Regional Options
++		mRegion_value = sharedPreferences.getInt(Contants.REGION_PREFERENCE, 1);
++		region_array =getResources().getStringArray(R.array.regions);
++		mRegionPreference.setSummary(region_array[mRegion_value-1]);
++		//#endif /*VENDOR_EDIT*/

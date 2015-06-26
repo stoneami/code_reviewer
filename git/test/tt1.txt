@@ -1,0 +1,13 @@
+diff --git a/oppo_config/MSM_14037/oppo_buildinfo.sh b/oppo_config/MSM_14037/oppo_buildinfo.sh
+index 5ed6696..5062bbc 100755
+--- a/oppo_config/MSM_14037/oppo_buildinfo.sh
++++ b/oppo_config/MSM_14037/oppo_buildinfo.sh
+@@ -38,7 +38,7 @@ echo "ro.product.model=${BUILD_PRODUCT}"
+ #Jevons@OnLineRD.DeviceService, 2013/8/27
+ #zhouqianli@Mobile.Network.cfu, 2014/07/21 add for cfu switch.
+ if [ $TARGET_BUILD_VARIANT = "user" ]; then
+-	if [ ${OPPO_BUILD_TYPE} = "cts" ]; then
++	if [ ${OPPO_BUILD_TYPE} = "cts" ] || [ ${OPPO_BUILD_TYPE} = "cmcc" ] || [ ${OPPO_BUILD_TYPE} = "cmcctest" ] || [ ${OPPO_BUILD_TYPE} = "cu" ]; then
+ 		echo "persist.sys.assert.panic=false"
+ 		echo "sys.oppo.dump=0"
+ 		echo "persist.sys.cfu_auto=0"

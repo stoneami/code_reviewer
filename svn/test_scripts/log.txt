@@ -1,0 +1,44 @@
+--- apkfiles_code/LauncherCenter/OnePlusNotUse/Wallpapers/res/values/inlay_wallpapers_size_name_mexico_exp.xml	(版本 11002)
++++ apkfiles_code/LauncherCenter/OnePlusNotUse/Wallpapers/res/values/inlay_wallpapers_size_name_mexico_exp.xml	(版本 11001)
+-?<?xml version="1.0" encoding="utf-8" ?>
+-<resources>
+-    <string-array name="inlay_wallpapers_name_mexico">
+-		<item>Telcel</item>
+-        <item>Sunshine and harbor</item>
+-        <item>Quiet ripples</item>
+-        <item>Elegance</item>
+-        <item>Lake and hill</item>
+-        <item>Brilliance</item>
+-        <item>Colorful glass</item>
+-        <item>Quiet ripples</item>
+-        <item>Lake and hill</item>
+-        <item>Brilliance</item>
+-        <item>Colorful glass</item>
+-        <item>Quiet ripples</item>
+-    </string-array>
+-</resources>
+Index: apkfiles_code/LauncherCenter/OnePlusNotUse/Wallpapers/res/values/inlay_wallpapers_thumb_mexico_exp.xml
+--- apkfiles_code/LauncherCenter/OnePlusNotUse/Wallpapers/res/values/inlay_wallpapers_thumb_mexico_exp.xml	(版本 11002)
++++ apkfiles_code/LauncherCenter/OnePlusNotUse/Wallpapers/res/values/inlay_wallpapers_thumb_mexico_exp.xml	(版本 11001)
+-<?xml version="1.0" encoding="utf-8"?>
+-<resources>
+-    <string-array name="inlay_wallpapers_thumb_mexico">
+-		<item >oppo_default_wallpaper_mexico_thumb_exp</item>
+-        <item >inlay_wallpaper0_thumb_mx_exp</item>
+-        <item >inlay_wallpaper1_thumb_mx_exp</item>
+-        <item >inlay_wallpaper2_thumb_mx_exp</item>
+-        <item >inlay_wallpaper3_thumb_mx_exp</item>
+-        <item >inlay_wallpaper4_thumb_mx_exp</item>
+-        <item >inlay_wallpaper5_thumb_mx_exp</item>
+-        <item >inlay_wallpaper6_thumb_mx_exp</item>
+-        <item >inlay_wallpaper7_thumb_mx_exp</item>
+-        <item >inlay_wallpaper8_thumb_mx_exp</item>
+-        <item >inlay_wallpaper9_thumb_mx_exp</item>
+-        <item >inlay_wallpaper10_thumb_mx_exp</item>
+-    </string-array>  
+-</resources>
+\aaa
+\bbb
+\ccc
+d///
+\/////

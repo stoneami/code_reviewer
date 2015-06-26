@@ -1,0 +1,6 @@
+r26087 | zhanglong | 2014-12-03 20:26:43 +0800 (Wed, 2014-12-03) | 8 行
+[All] [内存清理] 临时屏蔽掉定时清理功能，因为定时清理会清理正在使用的应用。等问题解决后此笔需要回退
+
+>>>Unkonwn reason (Binary type ?)
+Index: NearMe/MemoryClear/res/xml/clear_management.xml
+

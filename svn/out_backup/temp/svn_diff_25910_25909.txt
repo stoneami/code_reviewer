@@ -1,0 +1,20 @@
+Index: NearMe/MemoryClear/AndroidManifest.xml
+Index: NearMe/MemoryClear/src/com/oppo/oppomemoryclear/OppoMemoryClearActivity.java
+--- NearMe/MemoryClear/src/com/oppo/oppomemoryclear/OppoMemoryClearActivity.java	(版本 25910)
++++ NearMe/MemoryClear/src/com/oppo/oppomemoryclear/OppoMemoryClearActivity.java	(版本 25909)
+-	//private static final int STUB_LOAD_DELAY = 50;
+-	//private static final int STUB_BATVIEW_DELAY = 50;
++	private static final int STUB_LOAD_DELAY = 50;
++	private static final int STUB_BATVIEW_DELAY = 50;
+-			//zhanglong@EXP.GeneralApp.MemoryClear, 2014/11/28, modify for remove delay
+-			//the delay cause BUG551140
+-			mHandler.post(mBatteryLevelRunnable);
++			mHandler.postDelayed(mBatteryLevelRunnable, STUB_BATVIEW_DELAY);
++		mHandler.postDelayed(mALLRunnable, STUB_LOAD_DELAY);
+-		//zhanglong@EXP.GeneralApp.MemoryClear, 2014/11/28, modify for remove delay
+-		//the delay cause BUG551140
+-		mHandler.post(mALLRunnable);
+-		//zhanglong@EXP.GeneralApp.MemoryClear, 2014/11/28, modify for remove delay
+-		//the delay cause BUG551140
+-		mHandler.sendEmptyMessage(START_ANIM);
++		mHandler.sendEmptyMessageDelayed(START_ANIM, 100);

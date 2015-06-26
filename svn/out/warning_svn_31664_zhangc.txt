@@ -1,0 +1,6 @@
+r31664 | zhangc | 2015-04-20 19:47:27 +0800 (Mon, 2015-04-20) | 8 行
+[All] 【MX-Weather】Need preinstall some cities into the phone and other show correct bug:622622
+
+>>>Unkonwn reason (Binary type ?)
+Index: OppoWeather_auto/res/raw/weather.db
+

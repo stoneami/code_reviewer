@@ -1,0 +1,36 @@
+r24183 | zhangwensheng | 2014-10-11 11:51:03 +0800 (Sat, 2014-10-11) | 8 行
+[All][OppoGestureGuide][MX]bug 503782 墨西哥版本不支持短号
+分析：无。
+方案：无。
+风险：修改图片资源，无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: wei.yan
+Differential Revision: http://192.168.15.88:8080/D9108
+r24080 | gengxiaoyan | 2014-10-09 19:17:01 +0800 (Thu, 2014-10-09) | 8 行
+[All] [SystemUI][MX]添加Sim Lock网络锁的白名单（30个非telcel号码不进行网络锁定）
+分析：添加30个白名单，不进行网络锁。
+方案：当获取imsi属于给定的30个imsi时，不进行网络锁定。
+风险：新功能实现，需详细测试。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jifeng.tan
+Differential Revision: http://192.168.15.88:8080/D8972
+r24004 | chenting | 2014-10-08 20:31:36 +0800 (Wed, 2014-10-08) | 8 行
+[All][Contacts] 解决bug514184-【FIND7——马来西亚——电话本】新建本机联系人头像图标不.
+分析：缺少外销独有的图片资源。
+方案：增添图片资源。
+风险：增加图片资源无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: didan.huang
+Differential Revision: http://192.168.15.88:8080/D8892
+r23462 | weinj | 2014-09-25 15:46:42 +0800 (Thu, 2014-09-25) | 8 行
+[13073&14075][Data Saving]bugid：508523，解决find7 高配纯净后台没有隐藏gameloft游戏
+分析：加判断隐藏。
+方案：无。
+风险：没有风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D8417

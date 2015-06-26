@@ -1,0 +1,8 @@
+r31768 | zhangc | 2015-04-23 17:51:15 +0800 (Thu, 2015-04-23) | 8 行
+[All] 【天气】当前温度是一位数时显示重叠 bug:617715
+
+>>>REASON: no annotation
+Index: OppoWeather_auto/res/layout/city_weather_info.xml
+--- OppoWeather_auto/res/layout/city_weather_info.xml	(版本 31768)
+-            android:layout_toEndOf="@id/weather_current_degree"
+

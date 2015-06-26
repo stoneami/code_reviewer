@@ -1,0 +1,518 @@
+r26088 | zhangwensheng | 2014-12-03 20:39:08 +0800 (Wed, 2014-12-03) | 8 行
+[All] [内存清理] 临时屏蔽掉定时清理功能，因为定时清理会清理正在使用的应用。等问题解决后此笔需要回退
+分析：无。
+方案：无。
+风险：代码修改无风险。
+提交类型：rom
+提交人：游文权
+检视人：游文权
+r26087 | zhanglong | 2014-12-03 20:26:43 +0800 (Wed, 2014-12-03) | 8 行
+[All] [内存清理] 临时屏蔽掉定时清理功能，因为定时清理会清理正在使用的应用。等问题解决后此笔需要回退
+分析：无。
+方案：无。
+风险：代码修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D12105
+r26058 | liulisen | 2014-12-03 11:14:50 +0800 (Wed, 2014-12-03) | 8 行
+[All] [OppoAfterServiceEx]BugID:548600,当售后服务有两个以上号码时，无法拨打
+分析：原先设计如此。
+方案：通过正则表达式来匹配两个以上的电话号码，改为超链接来实现电话拨打。
+风险：小风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: wenchen.yan
+Differential Revision: http://192.168.15.88:8080/D12075
+r26033 | zhanglong | 2014-12-02 19:15:54 +0800 (Tue, 2014-12-02) | 8 行
+[All][内存清理] 解决BUG548807:清理内存小球消失了。
+分析：无。
+方案：系统时间修改后，重新启动TimerTask。
+风险：代码修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D12056
+r26031 | zhangwensheng | 2014-12-02 18:44:56 +0800 (Tue, 2014-12-02) | 8 行
+[ROM]:自动化全量导词条到2014-12-02      
+分析：更新各模块词条
+方案：采用自动化工具 
+风险：模块编译不过，会启动编译统一解决
+提交类型：rom
+影响范围：rom各模块
+测试建议：无
+自测用例路径：Export\App\开发交付自测用例文档_App_涂明路.xlsx
+r26029 | zhanglong | 2014-12-02 16:36:54 +0800 (Tue, 2014-12-02) | 8 行
+[All] [内存清理]解决BUG551293:内存清理悬浮窗在打开文件时闪现一次。
+分析：在启动新任务时，TopActivity可能会有一瞬间变成laucher，如果内存清理的恰好碰到这一瞬间就判断为桌面显示悬浮窗。
+方案：连续两次查询TopActivity是桌面才认为是桌面。
+风险：代码修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D12046
+r26028 | mayugang | 2014-12-02 15:29:13 +0800 (Tue, 2014-12-02) | 8 行
+[EXROM] 【MX】更改墨西哥互动屏保的需求
+分析：无。
+方案：无。
+风险：no risk
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D12030
+r26020 | zhangc | 2014-12-02 14:41:06 +0800 (Tue, 2014-12-02) | 8 行
+[All] 【天气】无网络情况下，添加一个城市，然后锁屏再亮屏，天气的背景图会变成黑色及天气更新失败错误问题
+分析：无。
+方案：无。
+风险：测试天气更新和查看背景颜色。
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D12034
+r26013 | shengtao.li | 2014-12-02 11:20:42 +0800 (Tue, 2014-12-02) | 8 行
+[All][OppoRemoteController]bugId：552856 解决搜索界面品牌未按照英文首字母排序问题
+分析：内销按照中文发音排序
+方案：将对应逻辑换成英文
+风险：已验证无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D12015
+r25997 | shengtao.li | 2014-12-01 19:46:13 +0800 (Mon, 2014-12-01) | 8 行
+[All][OppoRemoteController]修改布局，词条问题
+分析：按照体验要求修改布局
+方案：词条暂时提交，已通知相关人员改词条库
+风险：已验证无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D12000
+r25995 | zhangwensheng | 2014-12-01 18:12:15 +0800 (Mon, 2014-12-01) | 8 行
+[ROM]:自动化导墨西哥词条到2014-12-01      
+分析：更新各模块墨西哥词条
+方案：采用自动化工具 
+风险：模块编译不过，会启动编译统一解决
+提交类型：rom
+影响范围：rom各模块
+测试建议：无
+自测用例路径：Export\App\开发交付自测用例文档_App_涂明路.xlsx
+r25989 | zhangc | 2014-12-01 15:12:03 +0800 (Mon, 2014-12-01) | 8 行
+[All] 【天气】解决点击城市管理和分享返回后，天气底部菜单往下沉及UI问题
+分析：无。
+方案：无。
+风险：没有风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D11972
+r25982 | zhanglong | 2014-12-01 10:47:30 +0800 (Mon, 2014-12-01) | 8 行
+[All][内存清理] 解决BUG550528:【安全中心】进相机拍照后，内存悬浮窗消失。
+分析：内存过低时进程被杀掉导致。
+方案：让Service被杀后能自动重新启动。
+风险：无。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D11961
+r25910 | zhanglong | 2014-11-28 17:25:42 +0800 (Fri, 2014-11-28) | 8 行
+[All][内存清理] 解决BUG551140:进入内存清理，界面加载卡顿，始终在桌面显示先出现，其他延时出现
+分析：无。
+方案：无。
+风险：代码修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D11915
+r25909 | zhangwensheng | 2014-11-28 17:06:18 +0800 (Fri, 2014-11-28) | 8 行
+[14061][OppoUserGuide] 因为词条重复导致编译错误，删除所有外国词条，重新导入
+分析：无。
+方案：无。
+风险：词条问题，无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D11913
+r25887 | mayugang | 2014-11-28 10:24:46 +0800 (Fri, 2014-11-28) | 8 行
+[All] 【相册】解决编译错误，Nearme下的相册，只有墨西哥版本会编到
+分析：无。
+方案：无。
+风险：no risk
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D11888
+r25874 | zhangwensheng | 2014-11-28 00:03:30 +0800 (Fri, 2014-11-28) | 9 行
+[ROM]:[pm]同步SVN25852到R5-PVT分支-[All][内存清理] 解决BUG546259:内存低于２０％弹框后，不到１０分钟又弹出
+分析：无
+方案：无
+风险：编译错误
+提交类型：rom
+影响范围：用户指南
+提交人：游文权
+检视人：游文权
+r25873 | zhangwensheng | 2014-11-27 23:54:37 +0800 (Thu, 2014-11-27) | 9 行
+[ROM]:[pm]同步SVN25817到R5-PVT分支-【用户指南】将用户指南的代码回退到25367版本      
+分析：无
+方案：无 
+风险：编译错误
+提交类型：rom
+影响范围：用户指南
+提交人：游文权
+检视人：游文权
+r25858 | shengtao.li | 2014-11-27 20:15:10 +0800 (Thu, 2014-11-27) | 8 行
+[All][OppoRemoteController]bugId:549121解决设置区域后退出无效问题
+分析：sharedPreferences对象被覆盖，导致取值错误
+方案：在sharedPreferences被覆盖前将用户设置的值取出来
+风险：已验证无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D11876
+r25855 | zhangwensheng | 2014-11-27 19:28:42 +0800 (Thu, 2014-11-27) | 7 行
+[All] 【相册】提交墨西哥相册代码
+分析：无。
+方案：无。
+风险：需保证多国版本和墨西哥版本都有正确的相册版本
+提交类型：rom
+提交人：颜伟
+r25852 | zhanglong | 2014-11-27 18:53:38 +0800 (Thu, 2014-11-27) | 8 行
+[All][内存清理] 解决BUG546259:内存低于２０％弹框后，不到１０分钟又弹出
+分析：低内存时进程被杀重启后又弹。
+方案：代内存时保存计时状态。
+风险：代码修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D11871
+r25822 | zhangwensheng | 2014-11-27 13:01:06 +0800 (Thu, 2014-11-27) | 9 行
+[ROM] WifiDirectFileTransfer切到git上维护
+分析：无。
+方案：无。
+风险：修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: minglu.tu
+r25820 | zhangwensheng | 2014-11-27 12:00:03 +0800 (Thu, 2014-11-27) | 8 行
+[ROM]:自动化全量导词条到2014-11-27      
+分析：更新各模块词条
+方案：采用自动化工具 
+风险：模块编译不过，会启动编译统一解决
+提交类型：rom
+影响范围：ThemeSpaceRom
+测试建议：无
+自测用例路径：Export\App\开发交付自测用例文档_App_涂明路.xlsx
+r25817 | mayugang | 2014-11-27 11:23:27 +0800 (Thu, 2014-11-27) | 8 行
+[All] 【用户指南】将用户指南的代码回退到25367版本
+分析：无。
+方案：无。
+风险：no risk
+提交类型：rom
+Test Plan: 无
+Reviewed By: lei.liu
+Differential Revision: http://192.168.15.88:8080/D11828
+r25793 | duhuan | 2014-11-26 20:52:28 +0800 (Wed, 2014-11-26) | 8 行
+[ROM] 修改【PbapClient】修改导入完成中文词条及导入完成后可按返回取消
+分析：需求变更
+方案：修改弹出框属性
+风险：修改代码无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D11813
+r25788 | zhangc | 2014-11-26 15:58:15 +0800 (Wed, 2014-11-26) | 8 行
+[All]【天气】解决阿拉伯语下温度显示不一致的问题  BUG:538751
+分析：无。
+方案：无。
+风险：没有风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D11792
+r25787 | shengtao.li | 2014-11-26 15:18:48 +0800 (Wed, 2014-11-26) | 8 行
+[All][OppoRemoteController]修改布局文件，解决词条残缺问题BugId：538631
+分析：RelativeLayout的高度固定，导致某些语言显示不完全
+方案：将android:layout_height设置为wrap_content
+风险：已验证
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D11785
+r25772 | yanwei | 2014-11-26 10:42:46 +0800 (Wed, 2014-11-26) | 8 行
+[All] 【NearMeSync】bugID:547327 添加必要的log用以跟踪低概率ANR问题
+分析：无。
+方案：无。
+风险：没有风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: xiaoyan.chen
+Differential Revision: http://192.168.15.88:8080/D11762
+r25754 | zhangwensheng | 2014-11-25 20:33:11 +0800 (Tue, 2014-11-25) | 8 行
+[ROM]:自动化全量导词条到2014-11-25      
+分析：更新各模块词条
+方案：采用自动化工具 
+风险：模块编译不过，会启动编译统一解决
+提交类型：rom
+影响范围：Phone
+测试建议：无
+自测用例路径：Export\App\开发交付自测用例文档_App_涂明路.xlsx
+r25751 | zhangwensheng | 2014-11-25 18:56:36 +0800 (Tue, 2014-11-25) | 7 行
+[ROM] 拉R5 NearMe pvt分支,删除多余文件夹
+分析：无。
+方案：无。
+风险：修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: minglu.tu
+r25750 | zhangwensheng | 2014-11-25 18:55:43 +0800 (Tue, 2014-11-25) | 7 行
+[ROM] 拉R5 NearMe pvt分支
+分析：无。
+方案：无。
+风险：修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: minglu.tu
+r25749 | zhangwensheng | 2014-11-25 18:54:27 +0800 (Tue, 2014-11-25) | 9 行
+[ROM] 拉R5 NearMe pvt分支
+分析：无。
+方案：无。
+风险：修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: minglu.tu
+r25748 | zhangwensheng | 2014-11-25 18:52:31 +0800 (Tue, 2014-11-25) | 8 行
+[ROM]:自动化全量导词条到2014-11-25      
+分析：更新各模块词条
+方案：采用自动化工具 
+风险：模块编译不过，会启动编译统一解决
+提交类型：rom
+影响范围：Phone
+测试建议：无
+自测用例路径：Export\App\开发交付自测用例文档_App_涂明路.xlsx
+r25747 | zhangwensheng | 2014-11-25 18:52:07 +0800 (Tue, 2014-11-25) | 9 行
+[ROM] 拉R5 NearMe pvt分支
+分析：无。
+方案：无。
+风险：修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: minglu.tu
+r25744 | shengtao.li | 2014-11-25 17:55:01 +0800 (Tue, 2014-11-25) | 8 行
+[All][OppoRemoteController]更新SDK版本为v1.0.18
+分析：UEI提供
+方案：直接替换
+风险：无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D11739
+r25740 | shengtao.li | 2014-11-25 16:09:16 +0800 (Tue, 2014-11-25) | 8 行
+[All][OppoRemoteController]修改词条app_name,解决bug547080
+分析：Remote control->Remote Control，手动修改方便测试
+方案：Remote control->Remote Control已通知更改词条库
+风险：已验证无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D11731
+r25739 | zhanglong | 2014-11-25 15:37:16 +0800 (Tue, 2014-11-25) | 8 行
+[All][内存清理] 系统组分析调用getMemoryInfo（）方法太频繁，进行优化。
+分析：无。
+方案：无。
+风险：可能对内存使用百分比显示有影响。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D11727
+r25738 | shengtao.li | 2014-11-25 14:48:05 +0800 (Tue, 2014-11-25) | 8 行
+[All][OppoRemoteController]机顶盒界面暂时屏蔽EPG
+分析：体验要求暂去掉EPG
+方案：暂时屏蔽
+风险：已验证无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D11723
+r25733 | shengtao.li | 2014-11-25 11:17:32 +0800 (Tue, 2014-11-25) | 8 行
+[All][OppoRemoteController]解决bug：548094，屏蔽遥控器设置中的节目导视功能
+分析：根据体验要求，暂时屏蔽该功能
+方案：直接屏蔽
+风险：已验证无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: yugang.ma
+Differential Revision: http://192.168.15.88:8080/D11716
+r25731 | mashaolong | 2014-11-25 11:03:25 +0800 (Tue, 2014-11-25) | 8 行
+[All] [OppoWeather]屏蔽掉外销不使用的天气推送服务
+分析：天气推送服务外销不使用，而且可能会引起一些未知的bug。
+方案：屏蔽掉启动天气推送服务的代码。
+风险：低风险。已编过
+提交类型：rom
+Test Plan: 无
+Reviewed By: xiaoyan.geng
+Differential Revision: http://192.168.15.88:8080/D11713
+r25730 | zhangwensheng | 2014-11-25 10:51:22 +0800 (Tue, 2014-11-25) | 9 行
+[ROM] WifiDirectFileTransfer切到git上维护
+分析：无。
+方案：无。
+风险：修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: minglu.tu
+r25713 | shengtao.li | 2014-11-24 20:09:31 +0800 (Mon, 2014-11-24) | 8 行
+[All][OppoRemoteController]解决导词条引起的编译错误
+分析：无。
+方案：无。
+风险：已验证无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D11698
+r25711 | shengtao.li | 2014-11-24 19:15:07 +0800 (Mon, 2014-11-24) | 8 行
+[All][OppoRemoteController]修改区域选择逻辑代码，解决bug：548074
+分析：区域选择控制逻辑有问题
+方案：添加REGEION_SELECT.equals(key)处理区域选择
+风险：已验证无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D11691
+r25709 | duhuan | 2014-11-24 18:41:43 +0800 (Mon, 2014-11-24) | 8 行
+[ROM] 修改【PbapClient】524839 【蓝牙导入电话本】正在传输的时候断开蓝牙，传输会继续！！
+分析：逻辑漏洞
+方案：没有手动取消是 断开蓝牙 提示导入失败
+风险：修改代码无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: ting.Chen
+Differential Revision: http://192.168.15.88:8080/D11686
+r25707 | zhangwensheng | 2014-11-24 16:46:38 +0800 (Mon, 2014-11-24) | 9 行
+[ROM]删除编译生成的res文件夹
+分析：无。
+方案：无。
+风险：修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: minglu.tu
+r25706 | zhangwensheng | 2014-11-24 16:46:28 +0800 (Mon, 2014-11-24) | 9 行
+[ROM]删除编译生成的bin文件夹
+分析：无。
+方案：无。
+风险：修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: minglu.tu
+r25704 | yanwei | 2014-11-24 16:20:29 +0800 (Mon, 2014-11-24) | 8 行
+[14091] 【FindPhone】解决部分机型防盗照片倒立的问题
+分析：无。
+方案：无。
+风险：验证下N3的防盗照片是否上下颠倒。
+提交类型：rom
+Test Plan: 无
+Reviewed By: xiaoyan.chen
+Differential Revision: http://192.168.15.88:8080/D11664
+r25702 | duhuan | 2014-11-24 16:01:36 +0800 (Mon, 2014-11-24) | 8 行
+[ROM] 修改【PbapClient】bug524790 【蓝牙导入电话本】导入后的联系人详情里 寻呼机项丢失
+分析：逻辑错误
+方案：修改逻辑错误，寻呼机项正常添加数据
+风险：修改代码无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: didan.huang
+Differential Revision: http://192.168.15.88:8080/D11662
+r25699 | zhangwensheng | 2014-11-24 15:05:37 +0800 (Mon, 2014-11-24) | 8 行
+[ROM]:自动化全量导词条到2014-11-24      
+分析：更新各模块词条
+方案：采用自动化工具 
+风险：模块编译不过，会启动编译统一解决
+提交类型：rom
+影响范围：Phone
+测试建议：无
+自测用例路径：Export\App\开发交付自测用例文档_App_涂明路.xlsx
+r25697 | zhangwensheng | 2014-11-24 14:33:57 +0800 (Mon, 2014-11-24) | 7 行
+[ALL] [OppoRemoteController]同步内销代码svn253~256(图片较多，故用超级账号)
+分析：无
+方案：无
+风险：已验证无风险
+提交类型：rom
+提交人：李胜涛
+r25678 | duhuan | 2014-11-22 21:27:43 +0800 (Sat, 2014-11-22) | 8 行
+[ROM] 修改【PbapClient】传输过程中取消,概率性提示导入0个
+分析：逻辑紊乱
+方案：调整显示进度方案
+风险：修改代码无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D11635
+r25673 | duhuan | 2014-11-22 17:18:24 +0800 (Sat, 2014-11-22) | 8 行
+[Rom] 修改【PbapClient】蓝牙匹配与传输过程中不允许连接其他设备
+分析：此过程中连接会导致失败
+方案：增加连接传输标志
+风险：修改代码无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: didan.huang
+Differential Revision: http://192.168.15.88:8080/D11631
+r25669 | duhuan | 2014-11-22 16:21:22 +0800 (Sat, 2014-11-22) | 8 行
+[Rom] 修改【PbapClient】修改导入数量联系人时 会重复弹出导入框问题；电话本进入蓝牙导入电话本后台导入后 不能正常进行问题
+分析：代码逻辑有问题
+方案：导入设置进度不启用新进程，进入导入程序由启动activity改完直接调用本地方法
+风险：修改代码无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D11626
+r25655 | zhangc | 2014-11-21 17:43:33 +0800 (Fri, 2014-11-21) | 8 行
+[All] 【天气】添加城市页面，自动定位，在未获取到天气时，长按，天气显示出来时删除城市，确定取消点击失效 BUG546078
+分析：由于UI更新逻辑错误导致。
+方案：无。
+风险：代码修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D11605
+r25654 | zhanglong | 2014-11-21 17:09:14 +0800 (Fri, 2014-11-21) | 8 行
+[All] [内存清理]解决BUG546259:开启内存低于20%提醒用户的开关，在内存使用77%的时候就开始弹框，点击取消，还是反复弹出。
+分析：无。
+方案：无。
+风险：代码修改无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: jun.cheng
+Differential Revision: http://192.168.15.88:8080/D11597
+r25649 | duhuan | 2014-11-21 10:42:34 +0800 (Fri, 2014-11-21) | 8 行
+[Rom] 蓝牙导入电话本模块（PbapClient）代码上传至nearme
+分析：新模块代码上传
+方案：add新模块
+风险：添加新模块无风险
+提交类型：rom
+Test Plan: 无
+Reviewed By: didan.huang
+Differential Revision: http://192.168.15.88:8080/D11561
+r25632 | mashaolong | 2014-11-20 19:00:53 +0800 (Thu, 2014-11-20) | 8 行
+[All] [OppoWeather]解决安卓4.4版本里面定位到仁寿的问题
+分析：怀疑跟Passive_provider有关。
+方案：王泽权工建议去掉注册的Passive Provider,在4.4版本上去掉。
+风险：低风险，王泽权工已验证。
+提交类型：rom
+Test Plan: 无
+Reviewed By: qiaoyi.luo
+Differential Revision: http://192.168.15.88:8080/D11534
+r25625 | zhangweichao | 2014-11-20 14:40:19 +0800 (Thu, 2014-11-20) | 8 行
+[NearMe]修改[开机向导]BugID[545692]开机向导禁用锁屏
+分析：无。
+方案：无。
+风险：修改代码无风险。
+提交类型：rom
+Test Plan: 无
+Reviewed By: qiaoyi.luo
+Differential Revision: http://192.168.15.88:8080/D11511
+r25596 | yimin | 2014-11-18 21:13:45 +0800 (Tue, 2014-11-18) | 8 行
+[wifi_direct] 解决发送文件之后，所发送的文件在本地被删除的问题
+分析：由于上一笔在更改发送电话本的时候，有做删除data/data文件的操作，没有判断文件管理器中发送文件不需要删除。
+方案：增加对 /data/data/com.oppo.wifidirect/files的判断。
+风险：在本地验证有出现状态栏进度条消失的现象。
+提交类型：rom
+Test Plan: 无
+Reviewed By: dedong.wei
+Differential Revision: http://192.168.15.88:8080/D11449
