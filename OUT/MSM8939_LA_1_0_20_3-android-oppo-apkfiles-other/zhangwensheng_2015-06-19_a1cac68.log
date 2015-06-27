@@ -1,0 +1,19 @@
+a1cac68|zhangwensheng|2015-06-19 16:25:44 +0800|[ROM]:开启台湾运营商内置apk 分析：无 方案：无 风险：无 提交类型：rom 影响范围：编译配置 测试建议：不需要 自测用例路径：Export\App\开发交付自测用例文档_App_涂明路.xlsx
+
+>>>REASON: no (or incorrect) head annotation
+diff --git a/apk_CHT/Android.mk b/apk_CHT/Android.mk
+new file mode 100755
+index 0000000..846e387
+--- /dev/null
++++ b/apk_CHT/Android.mk
+@@ -0,0 +1,14 @@
++LOCAL_PATH:= $(call my-dir)
++SINGLE_MODULE_TAGS := optional
++SINGLE_CERTIFICATE := PRESIGNED
++SINGLE_TARGET := 
++copy_from := $(patsubst ./%,%, \
++  $(shell cd $(LOCAL_PATH) ; \
++          find . -maxdepth 1 -name "*.apk" -and -not -name ".*") \
++ )
++$(foreach SINGLE_TARGET, $(copy_from), $(eval include $(LOCAL_PATH)/single.mk))
++include $(call all-makefiles-under,$(LOCAL_PATH))

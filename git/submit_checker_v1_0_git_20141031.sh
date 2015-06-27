@@ -10,21 +10,23 @@
 # -------------------------------------------------------------------------------
 
 function main(){
-	local start_time=$(date +%s)
-	
 	check_option
 	
 	if [ $? -eq $UNKNOWN ];
 	then
 		print_usage
-		return 0
+#		return 0
 	fi
 
-	obtain_log
+#	obtain_log
 	
-#	analyze_git
+	analyze_git
 	
-#	print_elapsed_time "$start_time"
+	print_elapsed_time "$RUN_TIME"
+}
+
+function init() {
+	echo "init()"
 }
 
 function print_elapsed_time(){
@@ -44,8 +46,8 @@ function print_elapsed_time(){
 }
 
 function check_option(){
-	local date_start=$(echo "$START_TIME" | grep -E "$REGEX_DATE")
-	local date_end=$(echo "$END_TIME" | grep -E "$REGEX_DATE")
+	local date_start=$(echo "$GIT_START_TIME" | grep -E "$REGEX_DATE")
+	local date_end=$(echo "$GIT_END_TIME" | grep -E "$REGEX_DATE")
 	if [ "$date_start" -a "$date_end" ];
 	then
 		return $DATE_RANGE
@@ -63,7 +65,7 @@ function obtain_log(){
 	
 	if [  $? -eq $DATE_RANGE  ];
 	then
-		repo forall -c "echo -n '${DB_MARK}' >> ${LOG_FILE};pwd >> ${LOG_FILE};git log -p --pretty=format:'%h|%an|%ci|%s' --since='${START_TIME}' --before='${END_TIME}' >> ${LOG_FILE};echo '' >> ${LOG_FILE}"
+		repo forall -c "echo -n '${DB_MARK}' >> ${LOG_FILE};pwd >> ${LOG_FILE};git log -p --pretty=format:'%h|%an|%ci|%s' --since='${GIT_START_TIME}' --before='${GIT_END_TIME}' >> ${LOG_FILE};echo '' >> ${LOG_FILE}"
 		cp ${LOG_FILE} log_backup.txt
 		#remove blank line
 		sed -ri '/^[ \t]*$|^[-+]$/d' ${LOG_FILE}
@@ -78,7 +80,7 @@ function obtain_log(){
 
 DB_AMOUNT=0
 INTERVAL=0.5
-MAX_THREAD=5
+MAX_THREAD=1
 
 function analyze_git(){
 	DB_AMOUNT=$(wc -l $DB_LIST_FILE | awk '{print $1}')	
@@ -124,7 +126,7 @@ function analyze_per_git(){
 
 	if((range==0))
 	then
-		echo "NO change for $(get_git_name $git_index)"
+		echo "^-^ no change in $(get_git_name $git_index)"
 		return 0
 	else
 		echo "analyze_per_git: analyzing git $(get_git_name $git_index)"
@@ -289,7 +291,7 @@ function analyze_per_commit(){
 		
 		diff_i=$((diff_i+1))
 	done
-#	echo "analyze_per_commit commit_cur=$commit_i quit"
+	echo "analyze_per_commit commit_cur=$commit_i quit"
 }
 
 DETAIL_UNKNOWN=">>>Unkonwn reason (Binary type ?)"
@@ -449,34 +451,6 @@ function analyze_add(){
 			return "$REASON_INCORECT_HEAD_ANNOTATION"
 		fi
 	fi
-	
-#	if [ -z "$(echo "${marked_line}." | grep -E "$REGEX_BINARY_FILE")" -a -z "$(echo "${marked_line1}." | grep -E "$REGEX_BINARY_FILE")" ] 
-#	then
-#		local has_vendor_edit=$(echo "$diff" | grep -m 1 -i "VENDOR_EDIT")
-#		local has_author=$(echo "$diff" | grep -m 1 -i "Author:")
-#		local has_description=$(echo "$diff" | grep -m 1 -i "Description:")
-#		local has_revision_history=$(echo "$diff" | grep -m 1 -i "Revision History:")
-#		
-#		if [ -z "$has_vendor_edit" -o \
-#			 -z "$has_author" -o 	  \
-#			 -z "$has_description" -o \
-#			 -z "$has_revision_history" ];
-#		then
-#			return "$REASON_INCORECT_HEAD_ANNOTATION"
-#		fi
-#	else #add a new resource file or modify a lib, like *.apk, *.so, *.jpg and so on
-#		if []
-#		then
-#			local file_name=$(echo "$marked_line" | awk '{print $5}')
-#			echo "file_name: $file_name"
-#			local suffix=".$(echo "$file_name" | awk -F "." '{print $2}')"
-#			local has_exp=$(echo "$file_name" | grep -iE ".*_exp${suffix}")
-#			if [ -z "$has_exp" ]
-#			then
-#				return $REASON_ADDED_FILE_WITHOUT_EXP
-#			fi
-#		fi
-#	fi
 	
 	return $DIFF_PASS
 }
@@ -661,22 +635,15 @@ function clear_cache(){
 }
 
 ####################################################
+RUN_TIME=$(date +%s)
+
 USING_LAST_CFG=$1
 
 IGNORE_MARK="**Ignore:"
 
-EXPORT_SVN_USERNAME_REGEX="dedong\.wei|didan\.huang|fuchun\.liao|guangyong\.li|guofu\.yang|hanqing\.wang|hongyu\.bi|\
-hu\.li|huan\.du|hui\.yang|jiamin\.zhang|jianbo\.chen|jifeng\.tan|jimin\.wang|jin\.shu|jun\.cao|\
-jun\.cheng|junhao\.tang|junren\.jie|le\.li|lei\.chen|lei\.liu|li\.liu|lipeng\.bai|lisen\.liu|\
-long\.zhangzhang-wx|min\.yi|ming\.shao|minglu\.tu|qiang\.shao|qiao\.hu|qiaoyi\.luo|qingsong\.wu|\
-shaolong\.ma|shengtao\.li|ting\.Chen|tongjing\.shi|wei\.yan|weichao\.zhang|wenchen\.yan|wenquan\.you|\
-wensheng\.zhang|xiaohua\.tian|xiaoyan\.chen|xiaoyan\.geng|yisheng\.wu|yong\.hu|yongjie\.zhao|\
-yuanfei\.liu|yugang\.ma|zequan\.wang|zhengdong\.ou|zhi\.wang|zhichao\.liu|zhiyong\.liu|zongjian\.mao"
-
-
 #"2014-10-31 06:00:00"
-START_TIME=$1
-END_TIME=$2
+GIT_START_TIME=$1
+GIT_END_TIME=$2
 
 DB_MARK="###Database###:"
 

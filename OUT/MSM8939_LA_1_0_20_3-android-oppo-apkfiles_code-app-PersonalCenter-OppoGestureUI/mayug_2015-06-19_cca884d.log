@@ -1,0 +1,21 @@
+cca884d|mayug|2015-06-19 20:48:50 +0800|[EXROM]:【手势体感】更改手势体感的编译方式，指定为32位的，防止调用64位库的时候，报错 分析：无 方案：无 风险：无风险 提交类型：rom 影响范围：手势体感 测试建议：全面测试下手势体感中的基本功能，看是否存在异常 自测用例路径：Export\App\开发交付自测用例文档_Default.xlsx,0
+
+>>>Unkonwn reason (Binary type ?)
+diff --git a/Android.mk b/Android.mk
+old mode 100644
+new mode 100755
+index fdf01eb..57debfe
+--- a/Android.mk
++++ b/Android.mk
+@@ -7,9 +7,10 @@ LOCAL_MODULE       := $(SINGLE_TARGET)
+ LOCAL_MODULE_TAGS  := optional
+ LOCAL_MODULE_CLASS := APPS
+ ifeq ($(TARGET_ARCH),arm64)
++#Yugang.Ma@EXP.General.Gesture, modified for 32bit. 2015/6/19
+ LOCAL_PREBUILT_JNI_LIBS := $(shell aapt l ${LOCAL_PATH}/$(SINGLE_TARGET) | grep lib/arm64.*/.*so | sort | sed 's/^/@/' | xargs)
+ LOCAL_PREBUILT_JNI_LIBS_arm := $(shell aapt l ${LOCAL_PATH}/$(SINGLE_TARGET) | grep lib/armeabi.*/.*so | sort | sed 's/^/@/' | xargs)
+-LOCAL_MULTILIB := both
++LOCAL_MULTILIB := 32
+ else
+ LOCAL_PREBUILT_JNI_LIBS := $(shell aapt l ${LOCAL_PATH}/$(SINGLE_TARGET) | grep lib/armeabi.*/.*so | sort | sed 's/^/@/' | xargs)
+ endif
